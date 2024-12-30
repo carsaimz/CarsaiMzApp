@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarsaiMz</string>
+    <string name="welcome_text">BEM-VINDO AO CARSAIMZ</string>
+    <string name="credits_text">Feito com ❤️ por Carimo Saide Mpinda</string>
+    <string name="version_format">Versão: %s</string>
+  <string name="app_description">App oficial do projecto CarsaiMz</string>
+    
+    <!-- Mensagens de Navegação -->
+    <string name="nav_blog_mods">Blog Mods</string>
+    <string name="nav_share">Compartilhar</string>
+    <string name="nav_report">Reportar Erro</string>
+    <string name="nav_support">Suporte</string>
+    <string name="nav_bot">Bot Assistant</string>
+    
+    <!-- Mensagens de Erro -->
+    <string name="error_loading_page">Erro ao carregar página</string>
+    <string name="error_external_link">Erro ao abrir link externo</string>
+    <string name="error_navigation">Erro ao navegar para a página</string>
+    <string name="error_no_internet">Sem conexão com a internet</string>
+    <string name="error_generic">Ocorreu um erro. Tente novamente.</string>
+    
+    <!-- Mensagens de Sucesso -->
+    <string name="msg_subscribed">Inscrito com sucesso nas notificações</string>
+    <string name="msg_subscribe_failed">Falha ao se inscrever nas notificações</string>
+    
+    <!-- Mensagens de Compartilhamento -->
+    <string name="share_title">Compartilhar via</string>
+    <string name="share_message">Baixe o app CarsaiMz: https://carsaimz.blogspot.com/app.html</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="nav_back">Voltar</string>
+    <string name="nav_forward">Avançar</string>
+    <string name="nav_refresh">Atualizar</string>
+    <string name="nav_home">Início</string>
+    
+    <!-- Permissões -->
+    <string name="permission_storage_rationale">Precisamos de permissão para salvar arquivos no seu dispositivo</string>
+    <string name="permission_denied">Permissão negada. Alguns recursos podem não funcionar.</string>
+    
+    <!-- Ações -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_try_again">Tentar Novamente</string>
+    <string name="action_close">Fechar</string>
+</resources>

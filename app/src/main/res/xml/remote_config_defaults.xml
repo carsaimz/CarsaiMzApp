@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <!-- URLs Base -->
+    <entry>
+        <key>base_url</key>
+        <value>https://carsaimz.blogspot.com</value>
+    </entry>
+    <entry>
+        <key>mods_url</key>
+        <value>https://carsaimods.blogspot.com/p/app.html</value>
+    </entry>
+    <entry>
+        <key>bot_url</key>
+        <value>https://bots.easy-peasy.ai/bot/64a9676d-62fc-4261-917a-dcdb1cff2280</value>
+    </entry>
+    
+    <!-- Configurações de Feature Flags -->
+    <entry>
+        <key>enable_chat_bot</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>enable_notifications</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>enable_crash_reporting</key>
+        <value>true</value>
+    </entry>
+    
+    <!-- Configurações de Cache -->
+    <entry>
+        <key>cache_duration_hours</key>
+        <value>24</value>
+    </entry>
+    
+    <!-- Configurações de Timeout -->
+    <entry>
+        <key>connection_timeout_seconds</key>
+        <value>30</value>
+    </entry>
+    
+    <!-- Configurações de Analytics -->
+    <entry>
+        <key>analytics_enabled</key>
+        <value>true</value>
+    </entry>
+    
+    <!-- URLs permitidas (whitelist) -->
+    <entry>
+        <key>allowed_domains</key>
+        <value>carsaimz.blogspot.com,carsaimods.blogspot.com,bots.easy-peasy.ai</value>
+    </entry>
+    
+    <!-- Configurações de UI -->
+    <entry>
+        <key>show_progress_bar</key>
+        <value>true</value>
+    </entry>
+    
+    <!-- Mensagens personalizáveis -->
+    <entry>
+        <key>maintenance_message</key>
+        <value>Estamos em manutenção. Por favor, tente novamente mais tarde.</value>
+    </entry>
+</defaultsMap>

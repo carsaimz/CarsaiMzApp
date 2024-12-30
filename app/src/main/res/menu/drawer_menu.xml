@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_about"
+    android:icon="@drawable/ic_about"
+        android:title="Sobre" />
+    <item
+        android:id="@+id/nav_contact"
+    android:icon="@drawable/ic_contact"
+        android:title="Contacte-nos" />
+    <item
+        android:id="@+id/nav_thanks"
+    android:icon="@drawable/ic_thanks"
+        android:title="Agradecimentos" />
+    <item
+        android:id="@+id/nav_bot"
+    android:icon="@drawable/ic_chatbot"
+        android:title="Converse com nosso bot" />
+        <item
+    android:id="@+id/nav_blog_mods"
+    android:icon="@drawable/ic_mods"
+    android:title="Blog de Mods" />
+<item
+    android:id="@+id/nav_report"
+    android:icon="@drawable/ic_report"
+    android:title="Reportar Erros" />
+    <item
+    android:id="@+id/nav_support"
+    android:icon="@drawable/ic_support"
+    android:title="Apoie-nos" />
+  <item
+  android:id="@+id/nav_home"
+  android:icon="@drawable/ic_home"
+  android:title="Voltar para tela inicial" />
+</menu>

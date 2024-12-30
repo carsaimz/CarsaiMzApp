@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Cor de fundo principal -->
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
+
+        <!-- Definir cor do ProgressBar -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+</resources>

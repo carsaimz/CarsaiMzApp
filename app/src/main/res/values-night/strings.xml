@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarsaiMz</string>
+    <string name="welcome_text">BEM-VINDO AO CARSAIMZ</string>
+    <string name="credits_text">Feito com ❤️ por Carimo Saide Mpinda</string>
+    <string name="version_format">Versão: 1.7</string>
+</resources>

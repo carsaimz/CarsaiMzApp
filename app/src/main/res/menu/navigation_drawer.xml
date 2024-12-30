@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Início" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/ic_download"
+            android:title="Downloads" />
+    </group>
+
+    <item android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info"
+                android:title="Sobre" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="Contato" />
+            <item
+                android:id="@+id/nav_favorite"
+                android:icon="@drawable/ic_favorite"
+                android:title="Agradecimentos" />
+        </menu>
+    </item>
+
+    <item android:title="Compartilhar">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Compartilhar App" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star"
+                android:title="Avaliar App" />
+        </menu>
+    </item>
+</menu>
