@@ -18,7 +18,7 @@ Principais funcionalidades:
 
 ## Instalação
 
-1. Baixe o arquivo APK mais recente na seção de [Releases](https://github.com/carsaimz/CarsaiMz/releases).
+1. Baixe o arquivo APK mais recente na seção de [Releases](https://github.com/carsaimz/CarsaiMzApp/releases).
 2. Habilite a instalação de aplicativos de fontes desconhecidas em seu dispositivo Android.
 3. Instale o arquivo APK.
 
