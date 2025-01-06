@@ -20,6 +20,10 @@
     android:id="@+id/nav_blog_mods"
     android:icon="@drawable/ic_mods"
     android:title="Blog de Mods" />
+  <item
+    android:id="@+id/nav_our_book"
+    android:icon="@drawable/ic_book"
+    android:title="Nosso Livro" />
 <item
     android:id="@+id/nav_report"
     android:icon="@drawable/ic_report"

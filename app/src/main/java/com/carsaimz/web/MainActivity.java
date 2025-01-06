@@ -139,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
         settings.setDomStorageEnabled(true);
         settings.setBuiltInZoomControls(true);
         settings.setDisplayZoomControls(false);
-        settings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         settings.setAllowFileAccess(true);
         settings.setAllowContentAccess(true);
         settings.setSupportMultipleWindows(true);
@@ -331,6 +330,8 @@ public class MainActivity extends AppCompatActivity {
                 loadLocalHtml("report.html");
             } else if (itemId == R.id.nav_home) {
                 webView.loadUrl("https://carsaimz.blogspot.com");
+            } else if (itemId == R.id.nav_our_book) {
+                loadLocalHtml("book.html");
             }
             drawerLayout.closeDrawer(GravityCompat.START);
             return true;
@@ -340,7 +341,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadLocalHtml(String fileName) {
         webView.loadUrl("file:///android_asset/" + fileName);
     }
-
+  
     private void enableNewFeatures() {
         // Implementar novas funcionalidades aqui quando habilitadas via Remote Config
     }

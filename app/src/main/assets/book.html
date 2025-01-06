@@ -1,0 +1,3651 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INGLES PARA TODOS: Manual Completo Para Todos Níveis</title>
+<style>
+    /* Estilos gerais */
+    body {
+        font-family: 'Georgia', serif; /* Fonte elegante */
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4; /* Cor de fundo suave */
+        color: #333; /* Texto escuro para melhor contraste */
+        box-sizing: border-box;
+        overflow-x: hidden; /* Impede o scroll horizontal */
+    }
+
+    /* Container principal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: auto;
+        font-size: 4vw;
+    }
+
+    /* Estilos da capa */
+    .capa {
+        background-color: #ae6b00; /* Amarelo escuro */
+        color: #fff; /* Texto branco */
+        padding: 0;
+        text-align: center;
+        border-radius: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh; /* Altura da tela inteira */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .capa h1 {
+        font-size: 10vw;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .capa p {
+        font-size: 6vw;
+        margin-bottom: 0;
+        font-style: italic;
+    }
+
+    /* Estilos da ficha técnica */
+    .ficha-tecnica {
+        padding: 5% 10%;
+        background-color: #2c3e50; /* Preto */
+        color: #fff; /* Texto branco */
+        border-radius: 8px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 40px;
+        height: 100vh; /* Altura da tela inteira */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ficha-tecnica h2 {
+        font-size: 8vw;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .ficha-tecnica p {
+        font-size: 4vw;
+        margin-bottom: 5px;
+        line-height: 1.6;
+    }
+    .copyright {
+      font-size: 2vw;
+      margin-bottom: 5px;
+      line-height: 1.5;
+    }
+    /* Estilos do capítulo */
+    .capitulo {
+        padding: 5% 10%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 50px;
+        background-color: #fff; /* Branco */
+        color: #333; /* Texto escuro */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+ .capitulo h1 {
+        font-size: 6vw;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: beige; /* Amarelo escuro */
+    }
+    .capitulo h2 {
+        font-size: 5vw;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #ae6b00; /* Amarelo escuro */
+    }
+
+    .capitulo h3 {
+        font-size: 4vw;
+        margin-bottom: 10px;
+        color: #2c3e50; /* Preto */
+    }
+
+    .capitulo h4 {
+        font-size: 3.5vw;
+        margin-bottom: 8px;
+        color: #7f8c8d; /* Cinza suave */
+    }
+
+    .capitulo h5 {
+        font-size: 3vw;
+        margin-bottom: 6px;
+        color: #bdc3c7; /* Cinza claro */
+    }
+
+    .capitulo p {
+        margin-bottom: 15px;
+        line-height: 1.8;
+        font-size: 4vw;
+    }
+
+    .capitulo table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    .capitulo th, .capitulo td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 4vw;
+    }
+
+    .capitulo ul {
+        margin-bottom: 15px;
+        font-size: 4vw;
+    }
+	.capitulo ol {
+	margin-bottom: 15px;
+    font-size: 4vw;
+		}
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .capa h1 {
+            font-size: 8vw;
+        }
+
+        .capa p {
+            font-size: 5vw;
+        }
+
+        .ficha-tecnica h2 {
+            font-size: 6vw;
+        }
+        
+        .capitulo h1 {
+        font-size: 7.5vw;
+        }
+        
+        .capitulo h2 {
+            font-size: 7vw;
+        }
+
+        .capitulo h3 {
+            font-size: 5.5vw;
+        }
+
+        .capitulo h4 {
+            font-size: 4.5vw;
+        }
+
+        .capitulo h5 {
+            font-size: 4vw;
+        }
+
+        .capitulo table {
+            font-size: 3.5vw;
+        }
+        .capitulo p {
+          font-size: auto;
+        }
+                  .copyright {
+            font-size: 4vw;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .capa h1 {
+            font-size: 10vw;
+        }
+
+        .capa p {
+            font-size: 6vw;
+        }
+
+        .ficha-tecnica h2 {
+            font-size: 8vw;
+        }
+        .capitulo h1 {
+        font-size: 10.5vw;
+        }
+
+        .capitulo h2 {
+            font-size: 10vw;
+        }
+
+        .capitulo h3 {
+            font-size: 8vw;
+        }
+
+        .capitulo h4 {
+            font-size: 6vw;
+        }
+
+        .capitulo h5 {
+            font-size: 5vw;
+        }
+
+        .capitulo table {
+            font-size: 5vw;
+        }
+        .capitulo p {
+          font-size: auto;
+        }
+          .copyright {
+            font-size: 4vw;
+        }
+    }
+</style>
+<body>
+  <div class="container">
+    <!-- Capa do livro -->
+    <div class="capa">
+	  <h1>Inglês Para Todos</h1>
+	  <p>Manual da Língua Inglesa Para Todos os Níveis</p>
+	  <p></p><p><p><p><p><p></p></p></p></p></p>
+	  <p>Carimo S. Mpinda</p>
+	  <p>CarsaiMz</p>
+	  <p>3th Edition (Revised)</p>
+	  <p>2025</p>
+    </div>
+
+    <!-- Ficha técnica -->
+    <div class="ficha-tecnica">
+	  <h2>Ficha Técnica</h2>
+	  <p class="autor">Autor: Carimo Saide Mpinda</p>
+	  <p class="info">Editora: CarsaiMz</p>
+	  <p class="info">Género: Ensino de Línguas</p>
+	  <p class="data-publicacao">Data de publicação: Janeiro de 2025</p>
+	  <p>
+		<p><p><p><p><p><p></p></p></p></p></p></p>
+	  </p>
+	  <p class="copyright">Não Vende Este Manual Sem Permissão do Autor</p>
+
+    </div>
+  </div>
+  <div class="capitulo">
+    <h2>UNIDADE 1</h2>
+    <h3>1.1 PERSONAL PRONOUNS AND VOCABULARY RELATED TO FAMILY</h3>
+    <h4>1.1.1 COMPREENDER OS EQUIVALENTES DOS PRONOMES PESSOAIS EM PORTUGUÊS E INGLÊS E A SUA COLOCAÇÃO NA FRASE</h4>
+    <p>Vamos começar por conhecer os equivalentes em inglês dos pronomes pessoais em português:</p>
+    <table>
+	  <tr>
+		<th>Português</th>
+		<th>Inglês</th>
+	  </tr>
+	  <tr>
+		<td>Eu</td>
+		<td>I</td>
+	  </tr>
+	  <tr>
+		<td>Tu</td>
+		<td>You</td>
+	  </tr>
+	  <tr>
+		<td>Ele</td>
+		<td>He</td>
+	  </tr>
+	  <tr>
+		<td>Ela</td>
+		<td>She</td>
+	  </tr>
+	  <tr>
+		<td>Ele/Ela (objecto)</td>
+		<td>It</td>
+	  </tr>
+	  <tr>
+		<td>Nós</td>
+		<td>We</td>
+	  </tr>
+	  <tr>
+		<td>Vós</td>
+		<td>You</td>
+	  </tr>
+	  <tr>
+		<td>Eles/Elas</td>
+		<td>They</td>
+	  </tr>
+    </table>
+    <p>A colocação dos pronomes pessoais na frase dá-se no início da mesma:</p>
+    <ul>
+	  <li>I have a dog. Eu tenho um cão.</li>
+	  <li>You are my brother. Tu és meu irmão.</li>
+    </ul>
+    <p>O pronome pessoal tem que concordar com o verbo, apesar de os verbos ingleses, salvo os auxiliares, não variarem, excepto na terceira pessoa do singular.</p>
+    <ul>
+	  <li>I eat oranges. Eu como laranjas.</li>
+	  <li>You eat apples. Tu comes maçãs.</li>
+    </ul>
+    <p>O pronome "it" (3ª pessoal do singular) utiliza-se para objectos e também animais, embora com estes últimos também se possa utilizar "he" (ele) ou "she" (ela).</p>
+    <ul>
+	  <li>I have a car. It is red. Eu tenho um carro. Ele é vermelho.</li>
+    </ul>
+
+    <h4>1.1.2 COMPREENDER VOCABULÁRIO ACERCA DA FAMILIA</h4>
+    <table>
+	  <tr>
+		<th>Português</th>
+		<th>Inglês</th>
+	  </tr>
+	  <tr>
+		<td>Pais</td>
+		<td>Parents</td>
+	  </tr>
+	  <tr>
+		<td>Pai</td>
+		<td>Father</td>
+	  </tr>
+	  <tr>
+		<td>Mãe</td>
+		<td>Mother</td>
+	  </tr>
+	  <tr>
+		<td>Marido</td>
+		<td>Husband</td>
+	  </tr>
+	  <tr>
+		<td>Esposa</td>
+		<td>Wife</td>
+	  </tr>
+	  <tr>
+		<td>Irmão</td>
+		<td>Brother</td>
+	  </tr>
+	  <tr>
+		<td>Irmã</td>
+		<td>Sister</td>
+	  </tr>
+	  <tr>
+		<td>Filho</td>
+		<td>Son</td>
+	  </tr>
+	  <tr>
+		<td>Filha</td>
+		<td>Daughter</td>
+	  </tr>
+	  <tr>
+		<td>Avô</td>
+		<td>Grandfather</td>
+	  </tr>
+	  <tr>
+		<td>Avó</td>
+		<td>Grandmother</td>
+	  </tr>
+	  <tr>
+		<td>Neto</td>
+		<td>Grandson</td>
+	  </tr>
+	  <tr>
+		<td>Neta</td>
+		<td>Granddaughter</td>
+	  </tr>
+	  <tr>
+		<td>Tio</td>
+		<td>Uncle</td>
+	  </tr>
+	  <tr>
+		<td>Tia</td>
+		<td>Aunt</td>
+	  </tr>
+	  <tr>
+		<td>Sogro</td>
+		<td>Father-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Sogra</td>
+		<td>Mother-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Genro</td>
+		<td>Son-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Nora</td>
+		<td>Daughter-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Cunhado</td>
+		<td>Brother-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Cunhada</td>
+		<td>Sister-in-law</td>
+	  </tr>
+	  <tr>
+		<td>Primo</td>
+		<td>Cousin</td>
+	  </tr>
+	  <tr>
+		<td>Prima</td>
+		<td>Cousin</td>
+	  </tr>
+	  <tr>
+		<td>Sobrinho</td>
+		<td>Nephew</td>
+	  </tr>
+	  <tr>
+		<td>Sobrinha</td>
+		<td>Niece</td>
+	  </tr>
+    </table>
+    <p>Este é o vocabulário básico acerca da família. Qualquer informação esquecida nesta lista acima, use outros manuais ou dicionários para aprender melhor.</p>
+
+    <h3>1.2. VERB "TO BE", GREETINGS AND INTRODUCTIONS</h3>
+    <h4>1.2.1 COMPREENDER O VERBO "TO BE" EM PORTUGUÊS E INGLÊS NO PRESENTE SIMPLES NAS FORMAS AFIRMATIVA, NEGATIVA E INTERROGATIVA</h4>
+    <h5>VERB "TO BE"</h5>
+    <p>O verbo "to be" em inglês é equivalente aos verbos "ser" e "estar" em português. A conjugação deste verbo no Presente do Indicativo (Simple Present) é a seguinte:</p>
+    <table>
+	  <tr>
+		<th>Simple Present do verbo "to be" (Afirmativa)</th>
+	  </tr>
+	  <tr>
+		<td>Eu sou/estou</td>
+		<td>I am</td>
+	  </tr>
+	  <tr>
+		<td>Tu és/estás</td>
+		<td>You are</td>
+	  </tr>
+	  <tr>
+		<td>Ele/ela é/está</td>
+		<td>He\she\it is</td>
+	  </tr>
+	  <tr>
+		<td>Nós somos/estamos</td>
+		<td>We are</td>
+	  </tr>
+	  <tr>
+		<td>Vós sois/estais</td>
+		<td>You are</td>
+	  </tr>
+	  <tr>
+		<td>Eles/elas são/estão</td>
+		<td>They are</td>
+	  </tr>
+    </table>
+    <p>É costume utilizar contrações destas formas:</p>
+    <ul>
+	  <li>I am I'm</li>
+	  <li>You/we/they are You're\we're\they're</li>
+	  <li>He/she/it is He's\she's\it's</li>
+    </ul>
+    <p>O verbo "to be" pode ser utilizado como um verbo comum e, nesse caso, serve para dar informações acerca do sujeito da frase:</p>
+    <ul>
+	  <li>I am old Eu sou/estou velho</li>
+	  <li>The car is red O carro é vermelho</li>
+	  <li>It is cold Está frio</li>
+    </ul>
+
+    <h5>Simple Present do verbo "to be" (Negativa)</h5>
+    <table>
+	  <tr>
+		<td>I am not</td>
+		<td>Eu não sou/estou</td>
+	  </tr>
+	  <tr>
+		<td>You are not</td>
+		<td>Tu não és/estás</td>
+	  </tr>
+	  <tr>
+		<td>He/she/it is not</td>
+		<td>Ele/Ela não é/está</td>
+	  </tr>
+	  <tr>
+		<td>We are not</td>
+		<td>Nós não somos</td>
+	  </tr>
+	  <tr>
+		<td>You are not</td>
+		<td>Vós não sóis</td>
+	  </tr>
+	  <tr>
+		<td>They are not</td>
+		<td>Eles não são</td>
+	  </tr>
+    </table>
+    <p>As contracções destas formas são as seguintes:</p>
+    <ul>
+	  <li>I'm not</li>
+	  <li>You/we/they aren't</li>
+	  <li>He/she/It isn't</li>
+    </ul>
+
+    <h5>Simple Present do verbo "to be" (Interrogativa)</h5>
+    <table>
+	  <tr>
+		<td>Am I?</td>
+		<td>Sou/Estou Eu?</td>
+	  </tr>
+	  <tr>
+		<td>Are you?</td>
+		<td>És/Estás Tu?</td>
+	  </tr>
+	  <tr>
+		<td>He/She/It is?</td>
+		<td>É/Está Ele/Ela?</td>
+	  </tr>
+	  <tr>
+		<td>Are we?</td>
+		<td>Somos/Estamos Nós?</td>
+	  </tr>
+	  <tr>
+		<td>Are you?</td>
+		<td>Sóis/Estais vós</td>
+	  </tr>
+	  <tr>
+		<td>Are they?</td>
+		<td>São/Estão Eles/Elas?</td>
+	  </tr>
+    </table>
+
+    <h4>1.2.2 COMPREENDER O VOCABULÁRIO ACERCA DE CUMPRIMENTAR E APRESENTAR PESSOAS</h4>
+    <h5>VOCABULARY: GREETINGS AND INTRODUCTIONS</h5>
+    <p>Todos os dias:</p>
+    <ul>
+	  <li>Good morning – Bom dia</li>
+	  <li>Good afternoon – Boa tarde</li>
+	  <li>Good evening – Boa noite</li>
+	  <li>Good night – Boa noite (mas quando se vai dormir)</li>
+	  <li>Sleep well – Boa noite (quando vai dormir)</li>
+    </ul>
+    <p>Cumprimentar e perguntar como estás:</p>
+    <ul>
+	  <li>Hello/hi – Olá</li>
+	  <li>How are you? – Está tudo bem contigo?</li>
+	  <li>I'm fine thanks. And you? – Estou bem, obrigado. E tu?</li>
+	  <li>Not too bad, thanks. – Nada mal, obrigada.</li>
+    </ul>
+    <p>Despedir-se:</p>
+    <ul>
+	  <li>Goodbye/bye – Adeus</li>
+	  <li>See you soon! – Até logo (informal)</li>
+    </ul>
+    <p>Se pedir alguma coisa diz-se:</p>
+    <ul>
+	  <li>Please – Se faz favor</li>
+    </ul>
+    <p>Agradecer:</p>
+    <ul>
+	  <li>Thank you – Obrigado</li>
+	  <li>Cheers –"Chin, chin"/ à nossa</li>
+    </ul>
+    <p>Excuses:</p>
+    <ul>
+	  <li>Excuse me – Perdão/Com licença</li>
+	  <li>Sorry – Peço desculpa</li>
+	  <li>Bless you – Santinho/Viva (quando espirrar)</li>
+    </ul>
+    <p>Dias especiais:</p>
+    <ul>
+	  <li>Happy Birthday – Parabéns</li>
+	  <li>Merry/Happy Christmas – Feliz Natal</li>
+	  <li>Happy New Year – Feliz Ano Novo</li>
+	  <li>Good luck – Boa sorte</li>
+	  <li>Congratulations/Well done – Muito bem / Parabéns (quando alguém fez alguma coisa em especial como um bom exame, um novo emprego).</li>
+    </ul>
+
+
+
+    <h4>1.3.1 COMPREENDER O VERBO "TO HAVE" EM PORTUGUÊS E INGLÊS NO PRESENTE SIMPLES</h4>
+    <h5>VERB "TO HAVE"</h5>
+    <p>O verbo "to have" em inglês é equivalente aos verbos "haver" e "ter" em português. A conjugação deste verbo no Presente do Indicativo (Simple Present) é a seguinte:</p>
+    <table>
+	  <tr>
+		<th>Simple Present do verbo "to have"</th>
+	  </tr>
+	  <tr>
+		<td>Eu tenho/estou</td>
+		<td>I have</td>
+	  </tr>
+	  <tr>
+		<td>Tu tens</td>
+		<td>You have</td>
+	  </tr>
+	  <tr>
+		<td>Ele/ela tem</td>
+		<td>He/She/It has</td>
+	  </tr>
+	  <tr>
+		<td>Nós temos</td>
+		<td>We have</td>
+	  </tr>
+	  <tr>
+		<td>Vós tendes</td>
+		<td>You have</td>
+	  </tr>
+	  <tr>
+		<td>Eles/elas têm</td>
+		<td>They have</td>
+	  </tr>
+    </table>
+    <p>Como contracções destas formas, utilizamos:</p>
+    <ul>
+	  <li>I/you/we/they have I've/you've/they've</li>
+	  <li>He/she/it has He's/she's/it's</li>
+    </ul>
+    <p>O verbo "to have" pode ser utilizado como um verbo comum e, nesse caso, com o significado "ter".</p>
+
+    <h4>1.3.2 COMPREENDER O VOCABULARIO DE PAÍSES E NACIONALIDADES COUNTRIES AND NATIONALITIES</h4>
+    <table>
+	  <tr>
+		<th>Country</th>
+		<th>Nationality</th>
+	  </tr>
+	  <tr>
+		<td>France</td>
+		<td>French</td>
+	  </tr>
+	  <tr>
+		<td>Greece</td>
+		<td>Greek</td>
+	  </tr>
+	  <tr>
+		<td>Britain</td>
+		<td>British</td>
+	  </tr>
+	  <tr>
+		<td>Denmark</td>
+		<td>Danish</td>
+	  </tr>
+	  <tr>
+		<td>Finland</td>
+		<td>Finnish</td>
+	  </tr>
+	  <tr>
+		<td>Poland</td>
+		<td>Polish</td>
+	  </tr>
+	  <tr>
+		<td>Spain</td>
+		<td>Spanish</td>
+	  </tr>
+	  <tr>
+		<td>Sweden</td>
+		<td>Swedish</td>
+	  </tr>
+	  <tr>
+		<td>Turkey</td>
+		<td>Turkish</td>
+	  </tr>
+	  <tr>
+		<td>Germany</td>
+		<td>German</td>
+	  </tr>
+	  <tr>
+		<td>Malawia</td>
+		<td>Malawian</td>
+	  </tr>
+	  <tr>
+		<td>Mexico</td>
+		<td>Mexican</td>
+	  </tr>
+	  <tr>
+		<td>Mozambique</td>
+		<td>Mozambican</td>
+	  </tr>
+	  <tr>
+		<td>Tanzania</td>
+		<td>Tanzanian</td>
+	  </tr>
+	  <tr>
+		<td>The United States of America (USA)</td>
+		<td>American</td>
+	  </tr>
+	  <tr>
+		<td>Australia</td>
+		<td>Australian</td>
+	  </tr>
+	  <tr>
+		<td>Brazil</td>
+		<td>Brazilian</td>
+	  </tr>
+	  <tr>
+		<td>Egypt</td>
+		<td>Egyptian</td>
+	  </tr>
+	  <tr>
+		<td>Italy</td>
+		<td>Italian</td>
+	  </tr>
+	  <tr>
+		<td>Hungary</td>
+		<td>Hungarian</td>
+	  </tr>
+	  <tr>
+		<td>Korea</td>
+		<td>Korean</td>
+	  </tr>
+	  <tr>
+		<td>Russia</td>
+		<td>Russian</td>
+	  </tr>
+	  <tr>
+		<td>China</td>
+		<td>Chinese</td>
+	  </tr>
+	  <tr>
+		<td>Japan</td>
+		<td>Japanese</td>
+	  </tr>
+	  <tr>
+		<td>Portugal</td>
+		<td>Portuguese</td>
+	  </tr>
+	  <tr>
+		<td>The Netherlands</td>
+		<td>Dutch</td>
+	  </tr>
+	  <tr>
+		<td>Switzerland</td>
+		<td>Swiss</td>
+	  </tr>
+    </table>
+
+
+
+    <h2>UNIDADE 2</h2>
+    <h3>2.1. DEMONSTRATIVE PRONOUNS, INDEFINITE ARTICLES, PLURAL SPELLING & VOCABULARY: THINGS PEOPLE CARRY</h3>
+    <h4>2.1.1. COMPREENDER A UTILIZAÇÃO DOS PRONOMES DEMONSTRATIVOS</h4>
+    <h5>DEMONSTRATIVE PRONOUNS / PRONOMES DEMONSTRATIVOS</h5>
+    <ul>
+	  <li>This este, esta, isto</li>
+	  <li>That esse, essa, isso, aquilo, aquela, aquele</li>
+	  <li>These estes, estas</li>
+	  <li>Those aqueles, aquelas</li>
+    </ul>
+    <p>1. This is (dis is) utiliza-se para pessoas ou coisas próximas de nós. Neste exemplo, a seta curta indica proximidade: Michael: This is Michael.</p>
+    <p>2. That is (dat is) utiliza-se para pessoas ou coisas afastadas de nós. Neste exemplo, a seta mais comprida indica afastamento: Jennifer: That is Jennifer.</p>
+    <p>3. Contracções: that is = that's. Não é possível contrair this is.</p>
+    <p>4. These are (dí:s ár) utiliza-se para indicar duas ou mais pessoas ou coisas próximas de nós. Neste exemplo, a seta curta indica proximidade: Michael and Jennifer: These are Michael and Jennifer.</p>
+    <p>5. Those are (dóus ar) utiliza-se para indicar duas ou mais pessoas ou coisas afastadas de nós. Neste exemplo, a seta comprida indica afastamento: Jennifer and Sarah: Those are Jennifer and Sarah.</p>
+
+    <h4>2.1.2. COMPREENDER A UTILIZAÇÃO DOS ARTIGOS INDEFINIDOS</h4>
+    <h5>INDEFINITE ARTICLES – ARTIGOS INDEFINIDOS SINGULAR E PLURAL</h5>
+    <ul>
+	  <li>a/an um, uma</li>
+	  <li>some uns, umas, alguns, algumas</li>
+    </ul>
+    <p>Não se surpreenda por ambos os artigos terem o mesmo significado e por não terem plural.</p>
+    <p>Leia com atenção:</p>
+    <ol>
+	  <li>Antes de palavras que começam por consoante utiliza-se o artigo indefinido ou indeterminado a, cujo significado é"um, uma".</li>
+	  <li>Antes de palavras que começam por vogal utiliza-se, regra geral, o artigo indefinido ou indeterminado an, cujo significado é também "um, uma". Não devemos confundir palavras que comecem com fonética vogal com palavras que comecem com uma vogal. Existem palavras em que a primeira letra é consoante, mas o artigo a acompanhá-la seráan, assim como palavras que começam com uma letra vogal, mas que exige o artigo a, pois o som não é vogal. Veja um exemplo de cada: It'll take an hour for us to get there. Turn right when you see a university.</li>
+	  <li>Em geral, não se traduzem para inglês os artigos "uns, umas". Ex: Isto éum livro, This is a book; Isto são uns livros, These are books.</li>
+	  <li>Contudo, se necessitar expressar o plural dos artigos indefinidos a ou an, pode utilizar a palavra some (sám) que significa "uns/umas, alguns/algumas". Ex: This is a book (Isto éum livro) – These are some books (Isto são uns/alguns livros); That is an eraser (Aquilo éuma borracha) – Those are some erasers (Aquelas são umas/algumas borrachas).</li>
+    </ol>
+
+    <h4>2.1.3. COMPREENDER O VOCABULÁRIO RELACIONADO COM O QUE AS PESSOAS USAM</h4>
+    <h5>THINGS PEOPLE CARRY - OBJECTOS QUE AS PESSOAS USAM</h5>
+    <ul>
+	  <li>a hairbrush = uma escova</li>
+	  <li>an address book = uma agenda</li>
+	  <li>a comb = um pente</li>
+	  <li>a wallet = uma carteira</li>
+	  <li>a driver's license = uma carta de condução</li>
+	  <li>credit cards = cartões de crédito</li>
+	  <li>keys = chaves</li>
+	  <li>pens = canetas</li>
+	  <li>glasses/eyeglasses = óculos</li>
+    </ul>
+
+    <h4>2.1.4. COMPREENDER A FORMAÇÃO DO PLURAL</h4>
+    <ol>
+	  <li>Como regra geral, para formar o plural de uma palavra acrescenta-se -s: pen – pens (canetas); key – keys (chaves).</li>
+	  <li>As palavras terminadas em -s, -ss, -sh, -ch e -x formam plural acrescentando -es: bus – buses (autocarros); glass – glasses (óculos); brush – brushes (escovas); church – churches (igrejas); box – boxes (caixas).</li>
+	  <li>As palavras terminadas em -y precedido de consoante mudam para -ies: dictionary – dictionaries (dicionários); baby – babies (bebés); mas também há excepções: as terminadas em -y precedido de vogal (-ay, -ey, -oy, -uy) formam o plural regularmente: day – days (dias); monkey – monkeys (macacos); boy – boys (rapazes); guy – guys (tipos).</li>
+	  <li>As palavras terminadas em -f ou -fe mudam para -ves: wolf – wolves (lobos); knife – knives (facas); wife – wives (esposas). O som /s/ do singular muda para /z/ no plural.</li>
+	  <li>Por fim, existem outros plurais irregulares (mudam totalmente) e que é melhor memorizar: man (homem) – men (homens); woman (mulher) – women (mulheres); child (criança) – children (crianças); foot (pé) – feet (pés); tooth (dente) – teeth (dentes); mouse (rato) – mice (ratos);</li>
+    </ol>
+
+    <h3>2.2. POSSESSIVE ADJECTIVE, POSSESSIVE CASE & NUMBERS</h3>
+    <h4>2.2.1. COMPREENDER O ADJECTIVO POSSESSIVO</h4>
+    <h5>POSSESSIVE ADJECTIVES / ADJECTIVOS POSSESSIVOS</h5>
+    <ul>
+	  <li>My - meu, meus</li>
+	  <li>Your - teu, teus, seu, seus</li>
+	  <li>His - seu, seus (dele)</li>
+	  <li>Her - sua, suas (dela)</li>
+	  <li>Our - nosso, nossa, nossos, nossas (de nós)</li>
+	  <li>Your - vosso, vossa, vossos, vossas (de vocês)</li>
+	  <li>Their - seu, seus (deles ou delas)</li>
+    </ul>
+    <p>1. My (meu, meus), your (teu, teus, seu, seus), his (seu, seus, para pessoas de sexo masculino) e her (sua, suas, para pessoas de sexo feminino) indicam posse.</p>
+    <p>2. Os adjectivos possessivos no plural são os seguintes: (our, your e their), ou seja, para duas ou mais pessoas ou coisas. Recorde que todos os adjectivos possessivos são sempre colocados antes do substantivo ou da frase substantivada que modificam.</p>
+
+    <h4>2.2.2. COMPREENDER O CASO POSSESSIVO EM INGLÊS</h4>
+    <h5>POSSESSIVE CASE / CASO POSSESSIVO</h5>
+    <p>Quando em português queremos dizer que uma pessoa (MIKE) possui algo (O LIVRO), dizemos: O LIVRO DO MIKE. Novamente: O LIVRO DO MIKE</p>
+    <p>Apliquemos 1 à coisa possuída (livro), 2 à preposição de ligação e 3 ao possuidor (Mike):</p>
+    <p>Em inglês... funciona ao contrário.</p>
+    <p>Simplesmente substituímos a proposição de ligação por 's (de) e não utilize artigos com a coisa possuída: MIKE'S BOOK.</p>
+    <ul>
+	  <li>This is my umbrella. (Este é o meu guarda-chuva)</li>
+	  <li>This is your book. (Este é o teu livro)</li>
+	  <li>This is our classroom. (Esta é a nossa sala de aula)</li>
+	  <li>These are Robert's keys. (Estas são as chaves do Robert)</li>
+	  <li>These are his keys. (Estas são as chaves dele)</li>
+	  <li>These are Sarah's glasses. (Estes são os óculos da Sarah).</li>
+	  <li>She is Katherine and Daniel's teacher.(A Sra. Lee é a professora da Katherine e do Daniel).</li>
+	  <li>She is their teacher.(Ela é a professora deles).</li>
+    </ul>
+
+    <h4>2.2.3. COMPREENDER OS NÚMEROS</h4>
+    <h5>NUMBERS / OS NÚMEROS</h5>
+    <table>
+	  <tr>
+		<th>0</th><td>Oh/Zero</td>
+	  </tr>
+	 <tr> <th>1</th><td>One</td>
+	  </tr>
+	  <tr><th>2</th><td>Two</td>
+	  </tr><tr>
+	  <th>3</th><td>Three</td>
+	  </tr><tr>
+	  <th>4</th><td>Four</td>
+	  </tr><tr>
+	  <th>5</th><td>Five</td>
+	  </tr><tr>
+	  <th>6</th><td>Six</td>
+	  </tr><tr>
+	  <th>7</th><td>Seven</td>
+	  </tr><tr>
+	  <th>8</th><td>Eight</td>
+	  </tr><tr>
+	  <th>9</th><td>Nine</td>
+	  </tr><tr>
+	  <th>10</th><td>Ten</td>
+	  </tr>
+      </table>
+	  <ol>
+		<li>Em inglês, o 0 (zero) pode dizer-se zero ou oh. Ex: 9067 = "nine-zero-six-seven" ou "nine-oh-six-seven".</li>
+		<li>Quando se trata de um número de telefone, caso se repitam dois números (um a seguir ao outro), utiliza-se a palavra double (dábl) seguida do número. Ex: 555-3882 = five-five-five, three-double-eight-two.</li>
+	  </ol>
+	  <table>
+	  	<tr><th>11</th><td>Eleven</td></tr></tr>
+    	<tr><th>12</th><td>Twelve</td></tr></tr>
+    	<tr><th>13</th><td>Thirteen</td></tr>
+ 	   <tr><th>14</th><td>Fourteen</td></tr>
+	    <tr><th>15</th><td>Fifteen</td></tr>
+	    <tr><th>16</th><td>Sixteen</td></tr>
+		  <tr><th>17</th><td>Seventeen</td></tr>
+		  <tr><th>18</th><td>Eighteen</td></tr>
+		  <tr><th>19</th><td>nineteen</td></tr>
+		  <tr><th>20</th><td>Twenty</td></tr>
+		  <tr><th>21</th><td>Twenty-one</td></tr>
+		  <tr><th>22</th><td>Twenty-two</td></tr>
+		  <tr><th>23</th><td>Twenty-three</td></tr>
+		  <tr><th>24</th><td>Twenty-four</td></tr>
+		  <tr><th>25</th><td>Twenty-five</td></tr>
+		  <tr><th>26</th><td>Twenty-six</td></tr>
+		  <tr><th>27</th><td>Twenty-seven</td></tr>
+		  <tr><th>28</th><td>Twenty-eight</td></tr>
+		  <tr><th>29</th><td>Twenty-nine</td></tr>
+		  <tr><th>30</th><td>Thirty</td></tr>
+		  <tr><th>40</th><td>Forty</td></tr>
+		  <tr><th>50</th><td>Fifty</td></tr>
+		  <tr><th>60</th><td>Sixty</td></tr>
+		  <tr><th>70</th><td>Seventy</td></tr>
+		  <tr><th>80</th><td>Eight</td></tr>
+		  <tr><th>90</th><td>Ninety</td></tr>
+		  <tr><th>100</th><td>One hundred</td></tr>
+		  <tr><th>101</th><td>One hundred one</td></tr>
+		  <tr><th>102</th><td>One hundred two</td></tr>
+		  <tr><th>500</th><td>Five hundreds</td></tr>
+		  <tr><th>1000</th><td>One thousand</td></tr>
+		  <tr><th>2000</th><td>Two thousands</td></tr>
+		  <tr><th>100000</th><td>One hundred thousands</td></tr>
+		  <tr><th>1000000</th><td>One million</td>
+		</tr>
+	  </table>
+
+
+	  <h2>UNIDADE 3</h2>
+	  <h3>3.1. DEFINITE ARTICLE & DAYS OF THE WEEK, MONTHS AND SEASONS</h3>
+	  <h4>3.1.1. COMPREENDER A UTILIZAÇÃO DO ARTIGO DEFINIDO DEFINITE ARTICLE / ARTIGO DEFINIDO</h4>
+	  <p>The (o, a, os, as)</p>
+	  <p>Este artigo tem uma forma única e utiliza-se tanto para o masculino como para feminino, neutro, singular e plural.</p>
+	  <ol>
+        <li>Antes de palavras que comecem por consonante, pronuncia-se /de/. Ex: The book (de búk), O livro; The books (de búks), Os livros; The key (de kí), A chave; The keys (de kís), As chaves.</li>
+        <li>Antes de palavras que comecem por vogal, pronuncia-se /di/. Ej.: The umbrella (di ambréla), O guarda-chuva; The eraser (di eréiser), A borracha.</li>
+        <li>Os nomes de países não levam o artigo the caso sejam singulares; apenas se forem plurais. Não dizemos " the Argentina" mas sim Argentina; contudo, dizemos "the United States", os Estados Unidos.</li>
+	  </ol>
+
+	  <h4>3.1.2. COMPREENDER OS DIAS DA SEMANA</h4>
+	  <h5>DAYS OF THE WEEK / DIAS DA SEMANA</h5>
+	  <ul>
+        <li>SUNDAY - DOMINGO</li>
+        <li>MONDAY - SEGUNDA-FEIRA</li>
+        <li>TUESDAY - TERÇA-FEIRA</li>
+        <li>WEDNESDAY - QUARTA-FEIRA</li>
+        <li>THURSDAY - QUINTA-FEIRA</li>
+        <li>FRIDAY - SEXTA-FEIRA</li>
+        <li>SATURDAY - SÁBADO</li>
+	  </ul>
+	  <p>ACERCA DOS DIAS DA SEMANA:</p>
+	  <ol>
+        <li>Em inglês, os dias da semana escrevem-se com MAIÚSCULA.</li>
+        <li>Para dizer na Segunda-feira, na Terça-feira, etc. em inglês coloca-se a preposição on antes do dia da semana: on Monday, on Tuesday, etc.</li>
+        <li>Para dizê-lo no plural, ou seja: às Segundas-feiras, às Terças-feiras, etc., para além de usar a preposição on antes, devemos pluralizar o dia: on Mondays, on Tuesdays, etc.</li>
+        <li>O período de Segunda a Sexta denomina-se weekdays (uík-déis), semana de trabalho; sábado e domingo, weekend (uíkend), fim-de-semana.</li>
+	  </ol>
+
+	  <h4>3.1.3. COMPREENDER OS MESES DO ANO</h4>
+	  <h5>MONTHS OF THE YEAR / MESES DO ANO</h5>
+	  <ul>
+        <li>JANUARY - JANEIRO</li>
+        <li>FEBRUARY - FEVEREIRO</li>
+        <li>MARCH - MARÇO</li>
+        <li>APRIL - ABRIL</li>
+        <li>MAY - MAIO</li>
+        <li>JUNE - JUNHO</li>
+        <li>JULY - JULHO</li>
+        <li>AUGUST - AGOSTO</li>
+        <li>SEPTEMBER - SETEMBRO</li>
+        <li>OCTOBER - OUTUBRO</li>
+        <li>NOVEMBER - NOVEMBRO</li>
+        <li>DECEMBER - DEZEMBRO</li>
+	  </ul>
+	  <p>ACERCADOS MESES DO ANO:</p>
+	  <p>Não esqueça que, em inglês, os meses escrevem-se com MAIÚSCULA</p>
+
+	  <h4>3.1.4. COMPREENDER AS ESTAÇÕES DO ANO</h4>
+	  <h5>THE FOUR SEASONS / AS QUATRO ESTAÇÕES</h5>
+	  <ul>
+        <li>SPRING (Primavera)</li>
+        <li>SUMMER (Verão)</li>
+        <li>FALL (Autono)</li>
+        <li>WINTER (Inverno)</li>
+	  </ul>
+	  <p>AS ESTAÇÕES DO ANO: ALGO PARA RECORDAR:</p>
+	  <ol>
+        <li>Para se referirem ao Autono, os americanos usam o substantivo FALL (fól), enquanto os ingleses usam AUTUMN (ótom).</li>
+        <li>Em inglês britânico, os nomes das estações do ano costumam escrever-se com inicial maiúscula e sem o artigo definido the. Ex: a Primavera, the Spring. Por seu lado, em inglês americano, mais informal, escrevem-se geralmente com inicial minúscula, aceitando-se o artigo the: Ex: no Verão, in the summer.</li>
+	  </ol>
+
+	  <h4>3.2.1.COMPREENDER OS NÚMEROS ORDINAIS ORDINAL NUMBERS/ OS NÚMEROS ORDINAIS</h4>
+	  <table>
+		<tr>
+		  <th>Número</th>
+		  <th>Ordinal</th>
+		</tr>
+		<tr>
+		  <td>1st</td>
+		  <td>First</td>
+		</tr>
+		<tr>
+		  <td>2nd</td>
+		  <td>Second</td>
+		</tr>
+		<tr>
+		  <td>3rd</td>
+		  <td>Third</td>
+		</tr>
+		<tr>
+		  <td>4th</td>
+		  <td>Fourth</td>
+		</tr>
+		<tr>
+		  <td>11th</td>
+		  <td>Eleventh</td>
+		</tr>
+		<tr>
+		  <td>22nd</td>
+		  <td>Twenty-first</td>
+		</tr>
+		<tr>
+		  <td>33rd</td>
+		  <td>Thirty-third</td>
+		</tr>
+		<tr>
+		  <td>44th</td>
+		  <td>Forty-five</td>
+		</tr>
+	  </table>
+	  <p>ACERCA DOS NÚMEROS ORDINAIS:</p>
+	  <ol>
+		<li>Formam-se geralmente acrescentando th (/z/) ao número cardinal correspondente: seven (sete) – seventh (sétimo).</li>
+		<li>Existem algumas excepções: first, second, third, fifth, eighth, ninth, twelfth, twentieth, thirtieth, etc.</li>
+		<li>O número ordinal é normalmente precedido do artigo determinado the, o qual deve ler-se sempre: Elizabeth II – Elizabeth the Second.</li>
+		<li>As fracções lêem-se como em português: a sixth (um sexto), two sixths (dois sextos), etc.</li>
+		<li>Diz-se indistintamente part one ou the first part (parte um ou primeira parte); lesson ten ou tenth lesson (lição dez ou décima lição).</li>
+	  </ol>
+
+	  <h4>3.2.2. COMPREENDER A FORMA DE DIZER AS DATAS</h4>
+	  <h5>DATES / AS DATAS</h5>
+	  <p>SOBRE AS DATAS:</p>
+	  <p>WHAT'S THE DATE? (Qual é a data?) - IT'S MAY 1ST. 1995</p>
+	  <p>Lê-se: May the first ou então the first of May. O ano lê-se nineteen ninety-five ou então nineteen-hundred and ninety-five.</p>
+	  <p>TENHA EM ATENÇÃO O SEGUINTE:</p>
+	  <ol>
+		<li>O dia do mês expressa-se sempre com ordinais e o artigo the lê-se normalmente.</li>
+		<li>O ano costuma ler-se como se fossem dois números de dois algarismos cada.</li>
+		<li>A seguir ao número do dia, escrevem-se as DUAS ÚLTIMAS letras do número ordinal.</li>
+		<li>Os norte-americanos costumam reduzir a data com o MÊS ANTES: 6/10 para dizer June 10th. Isto por vezes confunde os europeus, já que na Europa 6/10 significaria Outubro 6.</li>
+	  </ol>
+
+	  <h4>3.2.3. COMPREENDER AS EXPRESSÕES DE TEMPO</h4>
+	  <h5>TIME EXPRESSIONS/ EXPRESSÕES DE TEMPO</h5>
+	  <p>TENHA MUITO CUIDADO COM O USO DAS PREPOSIÇÕES!</p>
+	  <ol>
+		<li>A hora é sempre precedida de at: at two (às 2); at midnight (à meia-noite); at noon (ao meio-dia).</li>
+		<li>O dia da semana (com ou sem data) é precedido de on: on Monday (na Segunda-feira); on April 1st (no dia 1 de Abril); on your birthday (no dia do teu aniversário); on Christmas Day (no dia de Natal).</li>
+		<li>Os meses, as estações do ano, anos e séculos são precedidos de in: in June (em Junho); in Summer (no Verão); in 1950 (em 1950); in the year 1950 (no ano de 1950); in the nineteenth century (no século dezanove).</li>
+		<li>Atente no significado das formas plurais: on Mondays (às Segundas-feiras, todas as Segundasfeiras); on Monday evenings (às Segundas à noite, todas as Segundas à noite); on Winter evenings (nas noites de Inverno).</li>
+		<li>Repare agora na diferença entre: on Christmas (Day) (no dia de Natal) e at Christmas (time) (no Natal, no período natalício).</li>
+		<li>Por fim, tenha atenção a estas utilizações: by day (de dia); by night (de noite); during the day (durante o dia); during the night (durante a noite). Não é demais recordar: in the morning (de manhã); in the afternoon (de tarde); in the evening (ao anoitecer); at night (à noite).</li>
+		<li>Quando queremos fazer referência a uma dada hora utilizamos at: at 5 o'clock; at half past two (às cinco horas; às duas e meia).</li>
+		<li>PARA TER EM CONTA: Quando vários complementos de tempo se encontram juntos, o mais específico precede o menos específico: Helen visited me at midnight on December 21st, 2000.</li>
+	  </ol>
+
+
+	  <h2>UNIDADE 4</h2>
+	  <h3>4.1 PRESENT SIMPLE</h3>
+	  <h4>4.1.1 COMPREENDER O PRESENTE SIMPLES</h4>
+	  <p>O Presente Simples</p>
+	  <p>O tempo verbal Presente Simples forma-se com o Infinito (sem "to") do verbo que se deseja conjugar: "to" go, "to" run, "to" open.</p>
+	  <p>Este tempo verbal utiliza-se para expressar DOIS tipos de acções:</p>
+	  <ol>
+        <li>As acções quotidianas, que cumprimos habitualmente. É importante que RELACIONE sempre este tempo verbal com as acções que executa habitualmente ou todos os dias, ou seja, com certa frequência: comer, dormir, beber, estudar, etc. Ex: I go to work (Vou trabalhar); I drive my car (Conduzo o meu automóvel); I play tennis (Jogo ténis), etc.</li>
+        <li>Em geral, utiliza-se também para factos reais: I have a car (Tenho um automóvel); I have a house (Tenho uma casa); etc.</li>
+	  </ol>
+
+	  <h4>4.1.2 COMPREENDER AS FORMAS AFIRMATIVA, NEGATIVA, INTERROGATIVA</h4>
+	  <p>Repare que este tempo verbal usa a mesma forma do Infinito (go), excepto nas terceiras pessoas do singular (he, she, it) às quais se adiciona um s, como se fosse um plural.</p>
+	  <p>Em inglês, tal como em português, podemos dizer "Eu vou = I go" na forma afirmativa. No entanto, para a interrogativa não é possível inverter as palavras. Não podemos dizer "Go I?".</p>
+	  <p>Em inglês, este tempo verbal requer AUXILIARES (palavras que o ajudam, que o AUXILIAM a conjugar-se).</p>
+	  <p>Neste caso, essas duas palavras são DO para as pessoas "I, you, we, you, they" e DOES para as três terceiras pessoas do singular: "he, she, it". DON'T é a contracção de DO NOT e DOESN'T a forma contraída de DOES NOT.</p>
+	  <p>Para respostas curtas, NÃO DEVE UTILIZAR O VERBO, mas apenas o auxiliar:</p>
+	  <ul>
+        <li>"Yes, I go" "Yes, I do";</li>
+        <li>"No, I do not go" "No, I don't"</li>
+	  </ul>
+	  <table>
+        <tr>
+		  <th>Affirmative</th>
+		  <th>Negative</th>
+		  <th>Interrogative</th>
+        </tr>
+        <tr>
+		  <td>I go</td>
+		  <td>I don't go</td>
+		  <td>Do I go?</td>
+        </tr>
+        <tr>
+		  <td>You go</td>
+		  <td>You don't go</td>
+		  <td>Do you go?</td>
+        </tr>
+        <tr>
+		  <td>He goes</td>
+		  <td>He doesn't go</td>
+		  <td>Does he go?</td>
+        </tr>
+        <tr>
+		  <td>She go</td>
+		  <td>She doesn't go</td>
+		  <td>Does she go?</td>
+        </tr>
+        <tr>
+		  <td>It goes</td>
+		  <td>It doesn't go</td>
+		  <td>Does it go?</td>
+        </tr>
+        <tr>
+		  <td>We go</td>
+		  <td>We don't go</td>
+		  <td>Do we go?</td>
+        </tr>
+        <tr>
+		  <td>You go</td>
+		  <td>You don't go</td>
+		  <td>Do you go?</td>
+        </tr>
+        <tr>
+		  <td>They go</td>
+		  <td>They don't go</td>
+		  <td>Do they go?</td>
+        </tr>
+	  </table>
+	  <p>Affirmative</p>
+	  <p>subject + 1 > "s" (he, she, it)</p>
+	  <ul>
+        <li>I go to Lisbon - Eu vou a Lisboa</li>
+        <li>He goes to Lisbon - Ele vai a Lisboa</li>
+	  </ul>
+	  <p>Negative</p>
+	  <p>subject + don't / doesn't + 1</p>
+	  <ul>
+        <li>I don't go to Lisbon - Eu não vou a Lisboa</li>
+        <li>He doesn't go to Lisboa - Ele não vai a Lisboa</li>
+	  </ul>
+	  <p>Interrogative</p>
+	  <p>Do / Does + subject + 1 ?</p>
+	  <ul>
+        <li>Do I go to Lisbon? - Vou a Lisboa?</li>
+        <li>Does he go to Lisbon? - Ele vai a Lisboa?</li>
+	  </ul>
+
+	  <h4>4.1.3 COMPREENDER A TERCEIRA PESSOA</h4>
+	  <p>O próximo passo é aprender como muda o verbo no PRESENTE SIMPLES para as pessoas do singular (he, she, it) e poderá praticar a pronúncia</p>
+	  <h5>ALGUMAS MUDANÇAS DO VERBO PARA O PRESENTE SIMPLES.</h5>
+	  <ol>
+        <li>Os infinitos terminados em -s, -z, -sh, -ch e -x formam a terceira pessoa do singular acrescentando -es: I teach (Eu ensino) – He teaches (Ele ensina); I watch (Eu olho) – She watches (Ela olha).</li>
+        <li>Os infinitos terminados em -y precedido de consoante mudam para -ies: I study (Eu estudo) – He studies (Ele estuda). Também há excepções: Os infinitos terminados em -y precedido de vogal (-ay, -ey, -oy, -uy) formam a terceira pessoa regularmente: I play (Eu jogo) – She plays (Ela joga).</li>
+        <li>Os infinitos terminados em -o acrescentam -es: I go (Eu vou) – He goes (Ele vai).</li>
+	  </ol>
+	  <p>JÁ AGORA... REPARE NESTA CURIOSIDADE:</p>
+	  <p>Vimos que o verbo to do se utiliza em inglês como AUXILIAR para poder conjugar o Presente Simples. Contudo, também se utiliza como verbo normal com o significado de fazer. O que produz esta curiosidade:</p>
+	  <ul>
+        <li>AFIRMATIVA: I do the housework (Eu faço as tarefas domésticas).</li>
+        <li>NEGATIVA: I do not do the housework (Eu não faço as tarefas domésticas).</li>
+	  </ul>
+
+	  <h3>4.2 COLOURS</h3>
+	  <h4>4.2.1 COMPREENDER O VOCABULÁRIO RELATIVO ÀS CORES</h4>
+	  <ol>
+        <li>Em inglês, as cores são INVARIÁVEIS em GÉNERO (masculino e feminino) e NÚMERO (singular e plural). Ou seja, white significa "branco, branca, brancos, brancas". Por isso, as cores são muito adaptáveis, ao construir uma frase ou oração.</li>
+        <li>Em inglês, as cores, usadas como substantivos, NUNCA são precedidas do artigo definido the.</li>
+	  </ol>
+	  <p>Vejamos:</p>
+	  <ul>
+        <li>Red is a beautiful color, O vermelho é uma cor bonita;</li>
+        <li>Green is my favourite color, O verde é a minha cor preferida.</li>
+	  </ul>
+	  <p>3. Para indicar que uma cor é "clara" ou "escura", devemos antecedê-la com os adjectivos light (claro) ou dark (escuro). Ex: light purple, violeta claro; dark purple, violeta escuro.</p>
+	  <p>4. Podemos adiantar mais algumas informações:</p>
+	  <ol>
+        <li>As cores são adjectivos, porque qualificam o substantivo;</li>
+        <li>Em inglês, os adjectivos vêm SEMPRE antes do substantivo.</li>
+	  </ol>
+	  <p>Ou seja, em português podemos dizer "blusa branca" ou mesmo "branca blusa" (para enfatizar poeticamente a frase). Em inglês, a ÚNICA possibilidade é white blouse (dizer blouse white é incorrecto).</p>
+
+
+	  <h2>UNIDADE 5</h2>
+	  <h3>5.1. TIME</h3>
+	  <h4>5.1.1. COMPREENDER AS HORAS</h4>
+	  <h5>THE TIME / AS HORAS</h5>
+	  <p>What time is it? Que horas são?</p>
+	  <ul>
+		<li>It's five o'clock in the morning. It's 5:00 a.m. São cinco da manhã.</li>
+		<li>It's seven o'clock in the morning. It's 7:00 a.m. São sete da manhã</li>
+		<li>It's twelve o'clock. It's noon. It's 12:00 noon. É meio-dia.</li>
+		<li>It's four o'clock in the afternoon. It's 4:00 p.
+		<li>It's six o'clock in the evening. It's 6:00 p.m. São seis da tarde.</li>
+		<li>It's eleven o'clock at night. It's 11:00 p.m. São onze da noite.</li>
+	  </ul>
+	  <p>ALGUMAS OBSERVAÇÕES ÚTEIS:</p>
+	  <ol>
+		<li>Para indicar as horas, utiliza-se a expressão "o'clock" para as horas em ponto.</li>
+		<li>Para indicar as horas e minutos, diz-se simplesmente a hora e os minutos, separados por dois pontos. Ex: 5:30, 8:45, 11:15.</li>
+		<li>Para indicar a diferença entre manhã (a.m.) e tarde/noite (p.m.), utilizam-se as abreviaturas a.m. (ante meridiem) e p.m. (post meridiem), que significam "antes do meio-dia" e "depois do meio-dia", respetivamente.</li>
+		<li>Quando não se utilizam as abreviaturas a.m. e p.m., pode-se dizer "in the morning", "in the afternoon" ou "at night".</li>
+	  </ol>
+
+	  <h3>5.2. PRONOMES INTERROGATIVOS</h3>
+	  <h4>5.2.1. COMPREENDER OS PRONOMES INTERROGATIVOS</h4>
+	  <h5>INTERROGATIVE PRONOUNS / PRONOMES INTERROGATIVOS</h5>
+	  <ul>
+		<li>Who? Quem?</li>
+		<li>What? O que?</li>
+		<li>Where? Onde?</li>
+		<li>When? Quando?</li>
+		<li>Why? Por quê?</li>
+		<li>How? Como?</li>
+		<li>Which? Qual?</li>
+		<li>Whose? De quem?</li>
+	  </ul>
+	  <p>ALGUMAS OBSERVAÇÕES SOBRE OS PRONOMES INTERROGATIVOS:</p>
+	  <ol>
+		<li>Who é usado para perguntar sobre pessoas: Who is that? Quem é aquele?</li>
+		<li>What é usado para perguntar sobre coisas: What is that? O que é aquilo?</li>
+		<li>Where é usado para perguntar sobre lugares: Where are you going? Para onde você vai?</li>
+		<li>When é usado para perguntar sobre tempo: When did you arrive? Quando você chegou?</li>
+		<li>Why é usado para perguntar sobre razão ou motivo: Why did you do that? Por que você fez isso?</li>
+		<li>How é usado para perguntar sobre modo ou maneira: How did you do it? Como você fez isso?</li>
+		<li>Which é usado para perguntar sobre escolha: Which one do you want? Qual você quer?</li>
+		<li>Whose é usado para perguntar sobre posse: Whose book is this? De quem é este livro?</li>
+	  </ol>
+
+	  <h3>5.3. BODY PARTS</h3>
+	  <h4>5.3.1. COMPREENDER AS PARTES DO CORPO</h4>
+	  <h5>BODY PARTS / PARTES DO CORPO</h5>
+	  <table>
+		<tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+		</tr>
+		<tr>
+		  <td>Cabeça</td>
+		  <td>Head</td>
+		</tr>
+		<tr>
+		  <td>Cabelo</td>
+		  <td>Hair</td>
+		</tr>
+		<tr>
+		  <td>Orelha</td>
+		  <td>Ear</td>
+		</tr>
+		<tr>
+		  <td>Olho</td>
+		  <td>Eye</td>
+		</tr>
+		<tr>
+		  <td>Nariz</td>
+		  <td>Nose</td>
+		</tr>
+		<tr>
+		  <td>Boca</td>
+		  <td>Mouth</td>
+		</tr>
+		<tr>
+		  <td>Dente</td>
+		  <td>Tooth/Teeth</td>
+		</tr>
+		<tr>
+		  <td>Língua</td>
+		  <td>Tongue</td>
+		</tr>
+		<tr>
+		  <td>Pescoço</td>
+		  <td>Neck</td>
+		</tr>
+		<tr>
+		  <td>Ombro</td>
+		  <td>Shoulder</td>
+		</tr>
+		<tr>
+		  <td>Braço</td>
+		  <td>Arm</td>
+		</tr>
+		<tr>
+		  <td>Cotovelo</td>
+		  <td>Elbow</td>
+		</tr>
+		<tr>
+		  <td>Mão</td>
+		  <td>Hand</td>
+		</tr>
+		<tr>
+		  <td>Dedo</td>
+		  <td>Finger</td>
+		</tr>
+		<tr>
+		  <td>Unhas</td>
+		  <td>Nails</td>
+		</tr>
+		<tr>
+		  <td>Tronco</td>
+		  <td>Trunk</td>
+		</tr>
+		<tr>
+		  <td>Barriga</td>
+		  <td>Stomach</td>
+		</tr>
+		<tr>
+		  <td>Costas</td>
+		  <td>Back</td>
+		</tr>
+		<tr>
+		  <td>Perna</td>
+		  <td>Leg</td>
+		</tr>
+		<tr>
+		  <td>Joelho</td>
+		  <td>Knee</td>
+		</tr>
+		<tr>
+		  <td>Pé</td>
+		  <td>Foot/Feet</td>
+		</tr>
+		<tr>
+		  <td>Dedo do pé</td>
+		  <td>Toe</td>
+		</tr>
+	  </table>
+
+
+	  <h2>UNIDADE 6</h2>
+	  <h3>6.1 COUNTABLE AND UNCOUNTABLE NOUNS</h3>
+	  <h4>6.1.1 COMPREENDER O QUE SÃO SUBSTANTIVOS CONTÁVEIS</h4>
+	  <h5>COUNTABLE NOUNS / SUBSTANTIVOS CONTÁVEIS</h5>
+	  <p>Os substantivos contáveis são aqueles que podem ser contados, ou seja, podem ter um número exato. Esses substantivos podem ser usados no singular e no plural.</p>
+	  <ul>
+        <li>A book (um livro)</li>
+        <li>Two books (dois livros)</li>
+        <li>Many books (muitos livros)</li>
+	  </ul>
+	  <p>Algumas características dos substantivos contáveis:</p>
+	  <ol>
+        <li>Podem ser precedidos por um artigo definido (the) ou indefinido (a/an).</li>
+        <li>Podem ser usados no plural, formando o plural com o acréscimo de -s ou -es.</li>
+        <li>Podem ser enumerados com números (one, two, three, etc.).</li>
+        <li>Podem ser usados com quantificadores como "some", "any", "many", "few", "a lot of", etc.</li>
+	  </ol>
+
+	  <h4>6.1.2 COMPREENDER O QUE SÃO SUBSTANTIVOS INCONTÁVEIS</h4>
+	  <h5>UNCOUNTABLE NOUNS / SUBSTANTIVOS INCONTÁVEIS</h5>
+	  <p>Os substantivos incontáveis são aqueles que não podem ser contados, pois representam algo que não tem uma unidade definida. Esses substantivos não possuem plural.</p>
+	  <ul>
+        <li>Water (água)</li>
+        <li>Rice (arroz)</li>
+        <li>Milk (leite)</li>
+	  </ul>
+	  <p>Algumas características dos substantivos incontáveis:</p>
+	  <ol>
+        <li>Não podem ser precedidos por um artigo indefinido (a/an).</li>
+        <li>Não podem ser usados no plural.</li>
+        <li>Não podem ser enumerados com números (one, two, three, etc.).</li>
+        <li>Podem ser usados com quantificadores como "some", "any", "much", "little", "a lot of", etc.</li>
+	  </ol>
+
+	  <h4>6.1.3 CONTÁVEIS VS. INCONTÁVEIS</h4>
+	  <p>Alguns substantivos podem ser contáveis ou incontáveis, dependendo do contexto:</p>
+	  <ul>
+        <li>A coffee (uma xícara de café) - contável</li>
+        <li>Coffee (café) - incontável</li>
+        <li>A juice (um suco) - contável</li>
+        <li>Juice (suco) - incontável</li>
+	  </ul>
+	  <p>Quando os substantivos são usados como contáveis, geralmente referem-se a uma porção ou unidade específica. Quando são usados como incontáveis, referem-se à substância ou material em geral.</p>
+
+	  <h4>6.1.4 SOME, ANY, NOT ANY, NO</h4>
+	  <h5>SOME, ANY, NOT ANY, NO</h5>
+	  <p>Estes quantificadores são usados com substantivos contáveis e incontáveis:</p>
+	  <ul>
+        <li><b>Some</b> é usado em frases afirmativas com substantivos contáveis e incontáveis: I have some books. I have some water.</li>
+        <li><b>Any</b> é usado em frases negativas e interrogativas com substantivos contáveis e incontáveis: I don't have any books. Do you have any water?</li>
+        <li><b>Not any</b> é usado para negar a existência de algo: I have not any books. I have not any water.</li>
+        <li><b>No</b> é usado para indicar a ausência total de algo: I have no books. I have no water.</li>
+	  </ul>
+
+	  <h3>6.2. FOOD AND DRINK</h3>
+	  <h4>6.2.1 VOCABULÁRIO RELATIVO A COMIDAS E BEBIDAS</h4>
+	  <h5>FOOD AND DRINK / COMIDAS E BEBIDAS</h5>
+	  <table>
+        <tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+        </tr>
+        <tr>
+		  <td>Pão</td>
+		  <td>Bread</td>
+        </tr>
+        <tr>
+		  <td>Arroz</td>
+		  <td>Rice</td>
+        </tr>
+        <tr>
+		  <td>Massa</td>
+		  <td>Pasta</td>
+        </tr>
+        <tr>
+		  <td>Batata</td>
+		  <td>Potato</td>
+        </tr>
+        <tr>
+		  <td>Carne</td>
+		  <td>Meat</td>
+        </tr>
+        <tr>
+		  <td>Peixe</td>
+		  <td>Fish</td>
+        </tr>
+        <tr>
+		  <td>Frango</td>
+		  <td>Chicken</td>
+        </tr>
+        <tr>
+		  <td>Ovo</td>
+		  <td>Egg</td>
+        </tr>
+        <tr>
+		  <td>Queijo</td>
+		  <td>Cheese</td>
+        </tr>
+        <tr>
+		  <td>Manteiga</td>
+		  <td>Butter</td>
+        </tr>
+        <tr>
+		  <td>Legumes</td>
+		  <td>Vegetables</td>
+        </tr>
+        <tr>
+		  <td>Fruta</td>
+		  <td>Fruit</td>
+        </tr>
+        <tr>
+		  <td>Água</td>
+		  <td>Water</td>
+        </tr>
+        <tr>
+		  <td>Leite</td>
+		  <td>Milk</td>
+        </tr>
+        <tr>
+		  <td>Café</td>
+		  <td>Coffee</td>
+        </tr>
+        <tr>
+		  <td>Chá</td>
+		  <td>Tea</td>
+        </tr>
+        <tr>
+		  <td>Sumo</td>
+		  <td>Juice</td>
+        </tr>
+        <tr>
+		  <td>Refrigerante</td>
+		  <td>Soda</td>
+        </tr>
+        <tr>
+		  <td>Cerveja</td>
+		  <td>Beer</td>
+        </tr>
+        <tr>
+		  <td>Vinho</td>
+		  <td>Wine</td>
+        </tr>
+	  </table>
+
+	  <h2>UNIDADE 7</h2>
+	  <h3>7.1.HOUSE</h3>
+	  <h4>7.1.1. COMPREENDER O VOCABULÁRIO RELATIVO À CASA</h4>
+	  <h5>HOUSE / CASA</h5>
+	  <table>
+        <tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+        </tr>
+        <tr>
+		  <td>Casa</td>
+		  <td>House</td>
+        </tr>
+        <tr>
+		  <td>Apartamento</td>
+		  <td>Apartment</td>
+        </tr>
+        <tr>
+		  <td>Quarto</td>
+		  <td>Bedroom</td>
+        </tr>
+        <tr>
+		  <td>Sala</td>
+		  <td>Living room</td>
+        </tr>
+        <tr>
+		  <td>Cozinha</td>
+		  <td>Kitchen</td>
+        </tr>
+        <tr>
+		  <td>Casa de banho</td>
+		  <td>Bathroom</td>
+        </tr>
+        <tr>
+		  <td>Garagem</td>
+		  <td>Garage</td>
+        </tr>
+        <tr>
+		  <td>Jardim</td>
+		  <td>Garden</td>
+        </tr>
+        <tr>
+		  <td>Porta</td>
+		  <td>Door</td>
+        </tr>
+        <tr>
+		  <td>Janela</td>
+		  <td>Window</td>
+        </tr>
+        <tr>
+		  <td>Teto</td>
+		  <td>Ceiling</td>
+        </tr>
+        <tr>
+		  <td>Chão</td>
+		  <td>Floor</td>
+        </tr>
+        <tr>
+		  <td>Parede</td>
+		  <td>Wall</td>
+        </tr>
+        <tr>
+		  <td>Escada</td>
+		  <td>Stairs</td>
+        </tr>
+	  </table>
+
+	  <h3>7.2. PREPOSITIONS OF PLACE</h3>
+	  <h4>7.2.1. COMPREENDER AS PREPOSIÇÕES DE LUGAR</h4>
+	  <h5>PREPOSITIONS OF PLACE / PREPOSIÇÕES DE LUGAR</h5>
+	  <table>
+        <tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+        </tr>
+        <tr>
+		  <td>Em, dentro de</td>
+		  <td>In</td>
+        </tr>
+        <tr>
+		  <td>Sobre, em cima de</td>
+		  <td>On</td>
+        </tr>
+        <tr>
+		  <td>Debaixo de</td>
+		  <td>Under</td>
+        </tr>
+        <tr>
+		  <td>Atrás de</td>
+		  <td>Behind</td>
+        </tr>
+        <tr>
+		  <td>Em frente de</td>
+		  <td>In front of</td>
+        </tr>
+        <tr>
+		  <td>Ao lado de</td>
+		  <td>Next to</td>
+        </tr>
+        <tr>
+		  <td>Entre</td>
+		  <td>Between</td>
+        </tr>
+        <tr>
+		  <td>Dentro de</td>
+		  <td>Inside</td>
+        </tr>
+        <tr>
+		  <td>Fora de</td>
+		  <td>Outside</td>
+        </tr>
+        <tr>
+		  <td>Perto de</td>
+		  <td>Near</td>
+        </tr>
+        <tr>
+		  <td>Longe de</td>
+		  <td>Far from</td>
+        </tr>
+	  </table>
+	  <p>Estas preposições são usadas para indicar a localização de pessoas ou objetos em relação a outros elementos.</p>
+
+
+	  <h2>UNIDADE 8</h2>
+	  <h3>8.1. PRESENT CONTINUOUS</h3>
+	  <h4>8.1.1. COMPREENDER O QUE É O PRESENT CONTINUOUS</h4>
+	  <p>O Presente Contínuo (Present Continuous) é usado para descrever ações que estão acontecendo no momento em que falamos.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Sujeito + BE (am, is, are) + Verbo principal (-ing)</p>
+	  <ul>
+		<li>I am studying English. (Eu estou estudando inglês.)</li>
+		<li>She is cooking dinner. (Ela está cozinhando o jantar.)</li>
+		<li>They are playing football. (Eles estão jogando futebol.)</li>
+	  </ul>
+	  <p>Observe que o verbo principal é sempre terminado em -ing.</p>
+
+	  <h4>8.1.2 PRESENT SIMPLE VS PRESENT CONTINUOUS</h4>
+	  <p>O Presente Simples (Simple Present) e o Presente Contínuo (Present Continuous) têm diferenças em seu uso:</p>
+	  <ul>
+		<li><b>Presente Simples:</b> Descreve ações habituais, fatos, verdades gerais.</li>
+		<li><b>Presente Contínuo:</b> Descreve ações em andamento no momento da fala.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I play tennis every weekend. (Eu jogo tênis todos os fins de semana.)</li>
+		<li>I am playing tennis right now. (Eu estou jogando tênis agora.)</li>
+		<li>She works in an office. (Ela trabalha em um escritório.)</li>
+		<li>She is working in the office now. (Ela está trabalhando no escritório agora.)</li>
+	  </ul>
+
+	  <h3>8.2 JOB VOCABULARY</h3>
+	  <h4>8.2.1. COMPREENDER O VOCABULARIO RELATIVO AOS EMPREGOS</h4>
+	  <h5>JOB VOCABULARY / VOCABULÁRIO DE EMPREGOS</h5>
+	  <table>
+		<tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+		</tr>
+		<tr>
+		  <td>Médico</td>
+		  <td>Doctor</td>
+		</tr>
+		<tr>
+		  <td>Enfermeiro(a)</td>
+		  <td>Nurse</td>
+		</tr>
+		<tr>
+		  <td>Professor(a)</td>
+		  <td>Teacher</td>
+		</tr>
+		<tr>
+		  <td>Advogado</td>
+		  <td>Lawyer</td>
+		</tr>
+		<tr>
+		  <td>Engenheiro</td>
+		  <td>Engineer</td>
+		</tr>
+		<tr>
+		  <td>Arquiteto</td>
+		  <td>Architect</td>
+		</tr>
+		<tr>
+		  <td>Contador</td>
+		  <td>Accountant</td>
+		</tr>
+		<tr>
+		  <td>Gerente</td>
+		  <td>Manager</td>
+		</tr>
+		<tr>
+		  <td>Secretária</td>
+		  <td>Secretary</td>
+		</tr>
+		<tr>
+		  <td>Vendedor</td>
+		  <td>Salesperson</td>
+		</tr>
+		<tr>
+		  <td>Motorista</td>
+		  <td>Driver</td>
+		</tr>
+		<tr>
+		  <td>Policial</td>
+		  <td>Police officer</td>
+		</tr>
+		<tr>
+		  <td>Bombeiro</td>
+		  <td>Firefighter</td>
+		</tr>
+		<tr>
+		  <td>Mecânico</td>
+		  <td>Mechanic</td>
+		</tr>
+		<tr>
+		  <td>Cozinheiro</td>
+		  <td>Chef</td>
+		</tr>
+		<tr>
+		  <td>Garçom</td>
+		  <td>Waiter</td>
+		</tr>
+		<tr>
+		  <td>Estudante</td>
+		  <td>Student</td>
+		</tr>
+	  </table>
+
+
+	  <h2>UNIDADE 9</h2>
+	  <h3>9.1. SPORTS</h3>
+	  <h4>9.1.1. COMPREENDER O VOCABULÁRIO RELATIVO AOS DESPORTOS</h4>
+	  <h5>SPORTS / DESPORTOS</h5>
+	  <table>
+		<tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+		</tr>
+		<tr>
+		  <td>Futebol</td>
+		  <td>Football</td>
+		</tr>
+		<tr>
+		  <td>Basquetebol</td>
+		  <td>Basketball</td>
+		</tr>
+		<tr>
+		  <td>Voleibol</td>
+		  <td>Volleyball</td>
+		</tr>
+		<tr>
+		  <td>Ténis</td>
+		  <td>Tennis</td>
+		</tr>
+		<tr>
+		  <td>Golfe</td>
+		  <td>Golf</td>
+		</tr>
+		<tr>
+		  <td>Natação</td>
+		  <td>Swimming</td>
+		</tr>
+		<tr>
+		  <td>Atletismo</td>
+		  <td>Athletics</td>
+		</tr>
+		<tr>
+		  <td>Boxe</td>
+		  <td>Boxing</td>
+		</tr>
+		<tr>
+		  <td>Ciclismo</td>
+		  <td>Cycling</td>
+		</tr>
+		<tr>
+		  <td>Corrida</td>
+		  <td>Running</td>
+		</tr>
+		<tr>
+		  <td>Esqui</td>
+		  <td>Skiing</td>
+		</tr>
+		<tr>
+		  <td>Snowboard</td>
+		  <td>Snowboarding</td>
+		</tr>
+		<tr>
+		  <td>Patinagem</td>
+		  <td>Skating</td>
+		</tr>
+		<tr>
+		  <td>Dança</td>
+		  <td>Dancing</td>
+		</tr>
+	  </table>
+
+	  <h3>9.2. THE PAST SIMPLE</h3>
+	  <h4>9.2.1. COMPREENDER O PASSADO SIMPLES (SIMPLE PAST)</h4>
+	  <p>O Passado Simples (Simple Past) é usado para descrever ações concluídas no passado.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Sujeito + Verbo no passado</p>
+	  <ul>
+		<li>I studied English last year. (Eu estudei inglês no ano passado.)</li>
+		<li>She went to the park yesterday. (Ela foi ao parque ontem.)</li>
+		<li>They played football last weekend. (Eles jogaram futebol no último fim de semana.)</li>
+	  </ul>
+
+	  <h4>9.2.2. COMPREENDER COMO SE FORMA O PASSADO SIMPLES</h4>
+	  <p>Existem dois tipos de verbos no Passado Simples:</p>
+	  <ol>
+		<li><b>Verbos Regulares:</b> Formam o passado acrescentando -ed ao final do verbo.</li>
+		<li><b>Verbos Irregulares:</b> Não seguem um padrão regular e precisam ser memorizados.</li>
+	  </ol>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>Regular: work - worked, play - played, cook - cooked</li>
+		<li>Irregular: be - was/were, have - had, go - went, see - saw</li>
+	  </ul>
+
+	  <h3>9.3 THE WEATHER / O CLIMA</h3>
+	  <h4>9.3.1. COMPREENDER O VOCABULÁRIO RELATIVO AO CLIMA</h4>
+	  <h5>WEATHER / CLIMA</h5>
+	  <table>
+		<tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+		</tr>
+		<tr>
+		  <td>Sol</td>
+		  <td>Sun</td>
+		</tr>
+		<tr>
+		  <td>Nuvem</td>
+		  <td>Cloud</td>
+		</tr>
+		<tr>
+		  <td>Chuva</td>
+		  <td>Rain</td>
+		</tr>
+		<tr>
+		  <td>Neve</td>
+		  <td>Snow</td>
+		</tr>
+		<tr>
+		  <td>Vento</td>
+		  <td>Wind</td>
+		</tr>
+		<tr>
+		  <td>Nevoeiro</td>
+		  <td>Fog</td>
+		</tr>
+		<tr>
+		  <td>Trovoada</td>
+		  <td>Thunder</td>
+		</tr>
+		<tr>
+		  <td>Relâmpago</td>
+		  <td>Lightning</td>
+		</tr>
+		<tr>
+		  <td>Frio</td>
+		  <td>Cold</td>
+		</tr>
+		<tr>
+		  <td>Calor</td>
+		  <td>Hot</td>
+		</tr>
+		<tr>
+		  <td>Quente</td>
+		  <td>Warm</td>
+		</tr>
+		<tr>
+		  <td>Fresco</td>
+		  <td>Cool</td>
+		</tr>
+	  </table>
+
+
+	  <h2>UNIDADE 10</h2>
+	  <h4>10.1.1 COMPREENDER O VERBO CAN COM CAPACIDADES</h4>
+	  <p>O verbo "can" é usado para expressar habilidades, permissões e possibilidades.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Sujeito + Can + Verbo</p>
+	  <ul>
+		<li>I can swim. (Eu sei nadar.)</li>
+		<li>She can speak three languages. (Ela sabe falar três línguas.)</li>
+		<li>Can you help me? (Você pode me ajudar?)</li>
+	  </ul>
+	  <p>Observe que o verbo principal vem sem a partícula "to" após o "can".</p>
+	  <p>Para a forma negativa, usa-se "cannot" ou a contração "can't":</p>
+	  <ul>
+		<li>I cannot swim. / I can't swim. (Eu não sei nadar.)</li>
+		<li>She cannot speak French. / She can't speak French. (Ela não sabe falar francês.)</li>
+	  </ul>
+	  <p>Para a forma interrogativa, inverte-se a ordem do sujeito e do "can":</p>
+	  <ul>
+		<li>Can you swim? (Você sabe nadar?)</li>
+		<li>Can she speak three languages? (Ela sabe falar três línguas?)</li>
+	  </ul>
+
+	  <h4>10.1.2 COMPREENDER O VERBO CAN PARA PERMISSÃO E POSSIBILIDADE</h4>
+	  <p>Além de habilidades, o verbo "can" também é usado para expressar permissão e possibilidade.</p>
+	  <ul>
+		<li>You can leave now. (Você pode sair agora.)</li>
+		<li>Can I use your phone? (Posso usar seu telefone?)</li>
+		<li>It can rain tomorrow. (Pode chover amanhã.)</li>
+	  </ul>
+
+	  <h3>10.2. MODAL VERBS</h3>
+	  <h4>10.2.1 COMPREENDER OS VERBOS MODAIS</h4>
+	  <h5>MODAL VERBS / VERBOS MODAIS</h5>
+	  <p>Os verbos modais são auxiliares que expressam diferentes significados, como obrigação, permissão, possibilidade, etc.</p>
+	  <table>
+		<tr>
+		  <th>Verbo Modal</th>
+		  <th>Significado</th>
+		</tr>
+		<tr>
+		  <td>Can</td>
+		  <td>Habilidade, permissão, possibilidade</td>
+		</tr>
+		<tr>
+		  <td>Could</td>
+		  <td>Habilidade no passado, permissão, possibilidade</td>
+		</tr>
+		<tr>
+		  <td>May</td>
+		  <td>Permissão, possibilidade</td>
+		</tr>
+		<tr>
+		  <td>Might</td>
+		  <td>Possibilidade</td>
+		</tr>
+		<tr>
+		  <td>Must</td>
+		  <td>Obrigação</td>
+		</tr>
+		<tr>
+		  <td>Should</td>
+		  <td>Conselho, recomendação</td>
+		</tr>
+		<tr>
+		  <td>Will</td>
+		  <td>Vontade, intenção, futuro</td>
+		</tr>
+		<tr>
+		  <td>Would</td>
+		  <td>Desejo, preferência, condição</td>
+		</tr>
+	  </table>
+	  <p>Esses verbos modais são seguidos diretamente pelo verbo principal, sem a partícula "to".</p>
+
+	  <h4>10.2.2 COMPREENDER O USO DOS VERBOS MODAIS</h4>
+	  <p>Vamos examinar alguns exemplos do uso dos verbos modais:</p>
+	  <ul>
+		<li>You can go to the party. (Você pode ir à festa.)</li>
+		<li>I could speak French when I was younger. (Eu podia falar francês quando era mais novo.)</li>
+		<li>May I borrow your pen? (Posso pegar emprestado sua caneta?)</li>
+		<li>It might rain tomorrow. (Pode ser que chova amanhã.)</li>
+		<li>You must finish your homework. (Você deve terminar sua lição de casa.)</li>
+		<li>You should eat more vegetables. (Você deveria comer mais vegetais.)</li>
+		<li>I will help you with the project. (Eu vou ajudar você com o projeto.)</li>
+		<li>I would prefer to go to the movies. (Eu preferiria ir ao cinema.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 11</h2>
+	  <h3>11.1. ADVERBS</h3>
+	  <h4>11.1.1 COMPREENDER OS ADVÉRBIOS</h4>
+	  <h5>ADVERBS / ADVÉRBIOS</h5>
+	  <p>Os advérbios são palavras que modificam ou qualificam um verbo, adjetivo ou outro advérbio.</p>
+	  <p>Alguns exemplos de advérbios:</p>
+	  <ul>
+        <li>Quickly - Rapidamente</li>
+        <li>Carefully - Cuidadosamente</li>
+        <li>Well - Bem</li>
+        <li>Slowly - Devagar</li>
+        <li>Happily - Felizmente</li>
+        <li>Beautifully - Lindamente</li>
+	  </ul>
+	  <p>Os advérbios geralmente terminam em -ly, mas existem exceções, como "well", "fast", "hard", etc.</p>
+
+	  <h4>11.1.2 FORMAÇÃO DOS ADVÉRBIOS</h4>
+	  <p>Para formar a maioria dos advérbios, basta adicionar o sufixo -ly ao adjetivo correspondente:</p>
+	  <ul>
+        <li>Slow (adjetivo) -> Slowly (advérbio)</li>
+        <li>Quick (adjetivo) -> Quickly (advérbio)</li>
+        <li>Careful (adjetivo) -> Carefully (advérbio)</li>
+	  </ul>
+	  <p>Alguns advérbios, no entanto, têm formas irregulares:</p>
+	  <ul>
+        <li>Good -> Well</li>
+        <li>Fast -> Fast</li>
+        <li>Hard -> Hard</li>
+	  </ul>
+
+	  <h4>11.1.3 POSIÇÃO DOS ADVÉRBIOS NA FRASE</h4>
+	  <p>Os advérbios podem ocupar diferentes posições na frase, dependendo do que eles estão modificando:</p>
+	  <ul>
+        <li>Antes do verbo: She quickly read the book.</li>
+        <li>Depois do verbo: She read the book quickly.</li>
+        <li>No início da frase: Quickly, she read the book.</li>
+        <li>No final da frase: She read the book carefully.</li>
+	  </ul>
+	  <p>Os advérbios de frequência (always, usually, often, sometimes, never, etc.) geralmente ficam antes do verbo principal.</p>
+
+	  <h3>11.2. PREPOSITIONS OF TIME</h3>
+	  <h4>11.2.1 COMPREENDER AS PREPOSIÇÕES DE TEMPO</h4>
+	  <h5>PREPOSITIONS OF TIME / PREPOSIÇÕES DE TEMPO</h5>
+	  <table>
+        <tr>
+		  <th>Português</th>
+		  <th>Inglês</th>
+        </tr>
+        <tr>
+		  <td>Em, no</td>
+		  <td>In</td>
+        </tr>
+        <tr>
+		  <td>No, à</td>
+		  <td>On</td>
+        </tr>
+        <tr>
+		  <td>Há</td>
+		  <td>Ago</td>
+        </tr>
+        <tr>
+		  <td>Durante</td>
+		  <td>During</td>
+        </tr>
+        <tr>
+		  <td>Por</td>
+		  <td>For</td>
+        </tr>
+        <tr>
+		  <td>Desde</td>
+		  <td>Since</td>
+        </tr>
+        <tr>
+		  <td>Até</td>
+		  <td>Until</td>
+        </tr>
+        <tr>
+		  <td>À</td>
+		  <td>At</td>
+        </tr>
+	  </table>
+	  <p>Estas preposições são usadas para indicar o tempo de uma ação ou evento.</p>
+
+	  <h4>11.2.2 EXEMPLOS DE USO DAS PREPOSIÇÕES DE TEMPO</h4>
+	  <ul>
+        <li>I was born in 1990. (Eu nasci em 1990.)</li>
+        <li>I have a meeting on Monday. (Eu tenho uma reunião na segunda-feira.)</li>
+        <li>I arrived here three hours ago. (Eu cheguei aqui há três horas.)</li>
+        <li>I studied during the summer. (Eu estudei durante o verão.)</li>
+        <li>I will be away for two weeks. (Estarei ausente por duas semanas.)</li>
+        <li>I haven't seen her since last year. (Não a vejo desde o ano passado.)</li>
+        <li>The library is open until 10 pm. (A biblioteca fica aberta até as 10 da noite.)</li>
+        <li>The meeting is at 3 o'clock. (A reunião é às 3 horas.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 12</h2>
+	  <h3>12.1. THE FUTURE SIMPLE</h3>
+	  <h4>12.1.1 COMPREENDER O FUTURO SIMPLES</h4>
+	  <p>O Futuro Simples (Future Simple) é usado para expressar ações que acontecerão no futuro.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Sujeito + Will + Verbo</p>
+	  <ul>
+		<li>I will study English tomorrow. (Eu vou estudar inglês amanhã.)</li>
+		<li>She will go to the beach this weekend. (Ela vai ir à praia este fim de semana.)</li>
+		<li>They will have a party next month. (Eles vão ter uma festa no próximo mês.)</li>
+	  </ul>
+	  <p>Também é possível usar a contração 'll no lugar de "will":</p>
+	  <ul>
+		<li>I'll study English tomorrow. (Eu vou estudar inglês amanhã.)</li>
+		<li>She'll go to the beach this weekend. (Ela vai ir à praia este fim de semana.)</li>
+	  </ul>
+
+	  <h4>12.1.2 DIFERENÇA ENTRE WILL E BE GOING TO</h4>
+	  <p>Tanto o Futuro Simples (will) quanto o "be going to" são usados para expressar o futuro, mas há algumas diferenças:</p>
+	  <ul>
+		<li><b>Will:</b> Usado para expressar decisões, promessas e previsões no momento da fala.</li>
+		<li><b>Be going to:</b> Usado para expressar intenções, planos ou previsões baseados em evidências.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I will help you with your homework. (Eu vou te ajudar com sua lição de casa.)</li>
+		<li>It's going to rain today. (Vai chover hoje.)</li>
+		<li>I'm going to buy a new car next month. (Eu vou comprar um carro novo no próximo mês.)</li>
+	  </ul>
+
+	  <h3>12.2. COMPARATIVES AND SUPERLATIVES</h3>
+	  <h4>12.2.1 COMPREENDER OS GRAUS DE COMPARAÇÃO</h4>
+	  <h5>COMPARATIVES AND SUPERLATIVES / GRAUS DE COMPARAÇÃO</h5>
+	  <p>Os graus de comparação são usados para comparar qualidades entre dois ou mais elementos.</p>
+	  <p><b>Comparativo:</b> Usado para comparar duas coisas.</p>
+	  <p><b>Superlativo:</b> Usado para comparar uma coisa com um grupo de coisas.</p>
+
+	  <h4>12.2.2 FORMAÇÃO DOS GRAUS DE COMPARAÇÃO</h4>
+	  <p><b>Adjetivos de uma única sílaba:</b></p>
+	  <ul>
+		<li>Positivo: big</li>
+		<li>Comparativo: bigger</li>
+		<li>Superlativo: biggest</li>
+	  </ul>
+	  <p><b>Adjetivos de duas ou mais sílabas:</b></p>
+	  <ul>
+		<li>Positivo: beautiful</li>
+		<li>Comparativo: more beautiful</li>
+		<li>Superlativo: most beautiful</li>
+	  </ul>
+	  <p><b>Alguns adjetivos irregulares:</b></p>
+	  <ul>
+		<li>Positivo: good</li>
+		<li>Comparativo: better</li>
+		<li>Superlativo: best</li>
+	  </ul>
+
+	  <h4>12.2.3 EXEMPLOS DE USO DOS GRAUS DE COMPARAÇÃO</h4>
+	  <ul>
+		<li>My house is bigger than yours. (Minha casa é maior que a sua.)</li>
+		<li>She is the most intelligent student in the class. (Ela é a aluna mais inteligente da turma.)</li>
+		<li>This book is more interesting than that one. (Este livro é mais interessante do que aquele.)</li>
+		<li>John is the best football player on the team. (John é o melhor jogador de futebol da equipe.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 13</h2>
+	  <h3>13.1. PASSIVE VOICE</h3>
+	  <h4>13.1.1 COMPREENDER A VOZ PASSIVA</h4>
+	  <p>A Voz Passiva (Passive Voice) é usada quando o foco da frase está no objeto da ação, e não no sujeito que realiza a ação.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Sujeito + BE + Past Participle (verbo principal)</p>
+	  <ul>
+		<li>The book was written by the author. (O livro foi escrito pelo autor.)</li>
+		<li>The window was broken by the vandals. (A janela foi quebrada pelos vândalos.)</li>
+		<li>The house is being built by the construction workers. (A casa está sendo construída pelos trabalhadores da construção.)</li>
+	  </ul>
+	  <p>Observe que o sujeito da frase passiva recebe a ação, enquanto o agente da ação (quem realiza a ação) é introduzido pela preposição "by".</p>
+
+	  <h4>13.1.2 QUANDO USAR A VOZ PASSIVA</h4>
+	  <p>A Voz Passiva é usada em situações como:</p>
+	  <ul>
+		<li>Quando o agente da ação não é conhecido ou não é importante:</li>
+		<ul>
+		  <li>The window was broken. (A janela foi quebrada.)</li>
+		</ul>
+		<li>Quando queremos dar ênfase ao objeto da ação:</li>
+		<ul>
+		  <li>The new restaurant was opened last week. (O novo restaurante foi inaugurado na semana passada.)</li>
+		</ul>
+		<li>Em textos formais, instruções ou relatórios:</li>
+		<ul>
+		  <li>The report is being prepared by the team. (O relatório está sendo preparado pela equipe.)</li>
+		</ul>
+	  </ul>
+
+	  <h3>13.2. REPORTED SPEECH</h3>
+	  <h4>13.2.1 COMPREENDER O DISCURSO INDIRETO</h4>
+	  <p>O Discurso Indireto (Reported Speech) é usado para relatar o que alguém disse, sem usar as palavras exatas da pessoa.</p>
+	  <p>Estrutura do Discurso Indireto:</p>
+	  <p>Verbo de Relato + Sujeito + Oração Subordinada</p>
+	  <ul>
+		<li>Direct Speech: "I am going to the park." (Discurso Direto)</li>
+		<li>Reported Speech: She said (that) she was going to the park. (Discurso Indireto)</li>
+	  </ul>
+	  <p>Observe que no Discurso Indireto:</p>
+	  <ul>
+		<li>O tempo verbal é geralmente recuado (presente -> passado)</li>
+		<li>Os pronomes pessoais e possessivos são ajustados</li>
+		<li>Advérbios de tempo e lugar também podem ser ajustados</li>
+	  </ul>
+
+	  <h4>13.2.2 VERBOS DE RELATO COMUNS</h4>
+	  <p>Alguns verbos comuns usados para introduzir o Discurso Indireto:</p>
+	  <ul>
+		<li>say</li>
+		<li>tell</li>
+		<li>ask</li>
+		<li>explain</li>
+		<li>suggest</li>
+		<li>report</li>
+		<li>announce</li>
+	  </ul>
+	  <ul>
+		<p>Exemplos:</p>
+	  <li>She said (that) she was tired.</li>
+	  <li>The teacher told us (that) we should study harder.</li>
+	  <li>He asked (if) I could help him with his homework.</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 14</h2>
+	  <h3>14.1. CONJUNCTIONS</h3>
+	  <h4>14.1.1 COMPREENDER AS CONJUNÇÕES</h4>
+	  <h5>CONJUNCTIONS / CONJUNÇÕES</h5>
+	  <p>As conjunções são palavras que ligam orações, frases ou palavras, estabelecendo uma relação entre elas.</p>
+	  <p>Alguns tipos de conjunções:</p>
+	  <ul>
+        <li><b>Aditivas:</b> and, also, too, as well as</li>
+        <li><b>Adversativas:</b> but, however, although, while</li>
+        <li><b>Causais:</b> because, since, as, for</li>
+        <li><b>Condicionais:</b> if, unless, provided that</li>
+        <li><b>Temporais:</b> when, whenever, as soon as, before, after</li>
+        <li><b>Conclusivas:</b> therefore, so, consequently, thus</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>I like apples and oranges. (Aditiva)</li>
+        <li>She is smart, but she is also very kind. (Adversativa)</li>
+        <li>I couldn't go to the party because I had to study. (Causal)</li>
+        <li>If it rains, we'll stay inside. (Condicional)</li>
+        <li>When I finish my work, I'll call you. (Temporal)</li>
+        <li>It was raining, so we decided to stay home. (Conclusiva)</li>
+	  </ul>
+
+	  <h3>14.2. RELATIVE PRONOUNS</h3>
+	  <h4>14.2.1 COMPREENDER OS PRONOMES RELATIVOS</h4>
+	  <h5>RELATIVE PRONOUNS / PRONOMES RELATIVOS</h5>
+	  <p>Os pronomes relativos são usados para introduzir orações relativas, que fornecem informações adicionais sobre um substantivo.</p>
+	  <p>Principais pronomes relativos:</p>
+	  <ul>
+        <li>who, whom, whose (para pessoas)</li>
+        <li>which (para coisas)</li>
+        <li>that (para pessoas ou coisas)</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>The man who lives next door is very friendly. (O homem que mora ao lado é muito simpático.)</li>
+        <li>The book which I borrowed is very interesting. (O livro que eu peguei emprestado é muito interessante.)</li>
+        <li>The house that has a blue door is mine. (A casa que tem a porta azul é minha.)</li>
+	  </ul>
+	  <p>Observe que os pronomes relativos podem ser omitidos em certas situações:</p>
+	  <ul>
+        <li>The book (that) I borrowed is very interesting.</li>
+	  </ul>
+
+	  <h3>14.3. PHRASAL VERBS</h3>
+	  <h4>14.3.1 COMPREENDER OS PHRASAL VERBS</h4>
+	  <h5>PHRASAL VERBS / VERBOS FRASAIS</h5>
+	  <p>Os Phrasal Verbs são expressões formadas por um verbo e uma ou mais preposições ou advérbios, que juntos têm um significado diferente do significado individual de cada palavra.</p>
+	  <p>Exemplos de Phrasal Verbs:</p>
+	  <ul>
+        <li>Look up (pesquisar)</li>
+        <li>Take off (decolar)</li>
+        <li>Get up (levantar-se)</li>
+        <li>Carry on (continuar)</li>
+        <li>Break down (quebrar)</li>
+        <li>Give up (desistir)</li>
+	  </ul>
+	  <p>É importante memorizar os Phrasal Verbs, pois eles são muito comuns na língua inglesa e seu significado geralmente não pode ser deduzido apenas pelas palavras individuais.</p>
+
+
+	  <h2>UNIDADE 15</h2>
+	  <h3>15.1. REFLEXIVE PRONOUNS</h3>
+	  <h4>15.1.1 COMPREENDER OS PRONOMES REFLEXIVOS</h4>
+	  <h5>REFLEXIVE PRONOUNS / PRONOMES REFLEXIVOS</h5>
+	  <p>Os pronomes reflexivos são usados quando o sujeito da frase é também o objeto da ação.</p>
+	  <table>
+		<tr>
+		  <th>Pronome Pessoal</th>
+		  <th>Pronome Reflexivo</th>
+		</tr>
+		<tr>
+		  <td>I</td>
+		  <td>myself</td>
+		</tr>
+		<tr>
+		  <td>you</td>
+		  <td>yourself</td>
+		</tr>
+		<tr>
+		  <td>he</td>
+		  <td>himself</td>
+		</tr>
+		<tr>
+		  <td>she</td>
+		  <td>herself</td>
+		</tr>
+		<tr>
+		  <td>it</td>
+		  <td>itself</td>
+		</tr>
+		<tr>
+		  <td>we</td>
+		  <td>ourselves</td>
+		</tr>
+		<tr>
+		  <td>you</td>
+		  <td>yourselves</td>
+		</tr>
+		<tr>
+		  <td>they</td>
+		  <td>themselves</td>
+		</tr>
+	  </table>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I enjoy spending time by myself. (Eu gosto de passar tempo sozinho.)</li>
+		<li>She bought a new dress for herself. (Ela comprou um vestido novo para si mesma.)</li>
+		<li>They helped themselves to the cookies. (Eles se serviram dos biscoitos.)</li>
+	  </ul>
+
+	  <h3>15.2. POSSESSIVE PRONOUNS</h3>
+	  <h4>15.2.1 COMPREENDER OS PRONOMES POSSESSIVOS</h4>
+	  <h5>POSSESSIVE PRONOUNS / PRONOMES POSSESSIVOS</h5>
+	  <p>Os pronomes possessivos são usados para indicar posse ou propriedade.</p>
+	  <table>
+		<tr>
+		  <th>Pronome Possessivo</th>
+		  <th>Significado</th>
+		</tr>
+		<tr>
+		  <td>mine</td>
+		  <td>o(s)/a(s) meu(s)/minha(s)</td>
+		</tr>
+		<tr>
+		  <td>yours</td>
+		  <td>o(s)/a(s) seu(s)/sua(s)</td>
+		</tr>
+		<tr>
+		  <td>his</td>
+		  <td>o(s)/a(s) dele</td>
+		</tr>
+		<tr>
+		  <td>hers</td>
+		  <td>o(s)/a(s) dela</td>
+		</tr>
+		<tr>
+		  <td>its</td>
+		  <td>o(s)/a(s) dele (de um objeto)</td>
+		</tr>
+		<tr>
+		  <td>ours</td>
+		  <td>o(s)/a(s) nosso(s)/nossa(s)</td>
+		</tr>
+		<tr>
+		  <td>yours</td>
+		  <td>o(s)/a(s) de vocês</td>
+		</tr>
+		<tr>
+		  <td>theirs</td>
+		  <td>o(s)/a(s) deles/delas</td>
+		</tr>
+	  </table>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>This is my book, and that one is yours. (Este é o meu livro, e aquele é o seu.)</li>
+		<li>Her car is newer than ours. (O carro dela é mais novo que o nosso.)</li>
+		<li>The dog is wagging its tail. (O cachorro está abanando o rabo dele.)</li>
+	  </ul>
+
+	  <h3>15.3. QUANTIFIERS</h3>
+	  <h4>15.3.1 COMPREENDER OS QUANTIFICADORES</h4>
+	  <h5>QUANTIFIERS / QUANTIFICADORES</h5>
+	  <p>Os quantificadores são palavras usadas para indicar a quantidade de algo.</p>
+	  <table>
+		<tr>
+		  <th>Quantificador</th>
+		  <th>Significado</th>
+		</tr>
+		<tr>
+		  <td>a/an</td>
+		  <td>um/uma</td>
+		</tr>
+		<tr>
+		  <td>the</td>
+		  <td>o/a/os/as</td>
+		</tr>
+		<tr>
+		  <td>some</td>
+		  <td>alguns/algumas</td>
+		</tr>
+		<tr>
+		  <td>any</td>
+		  <td>qualquer</td>
+		</tr>
+		<tr>
+		  <td>much</td>
+		  <td>muito(a)</td>
+		</tr>
+		<tr>
+		  <td>many</td>
+		  <td>muitos(as)</td>
+		</tr>
+		<tr>
+		  <td>a few</td>
+		  <td>alguns</td>
+		</tr>
+		<tr>
+		  <td>a lot of</td>
+		  <td>muito(s)/muita(s)</td>
+		</tr>
+		<tr>
+		  <td>all</td>
+		  <td>todo(s)/toda(s)</td>
+		</tr>
+		<tr>
+		  <td>no</td>
+		  <td>nenhum(a)</td>
+		</tr>
+	  </table>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I have a car. (Eu tenho um carro.)</li>
+		<li>She bought some apples. (Ela comprou algumas maçãs.)</li>
+		<li>There is a lot of water in the lake. (Há muita água no lago.)</li>
+		<li>I don't have any money. (Eu não tenho dinheiro.)</li>
+		<li>All the students passed the exam. (Todos os alunos passaram no exame.)</li>
+		<li>I have no idea what you're talking about. (Eu não tenho nenhuma ideia do que você está falando.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 16</h2>
+	  <h3>16.1. RELATIVE CLAUSES</h3>
+	  <h4>16.1.1 COMPREENDER AS ORAÇÕES RELATIVAS</h4>
+	  <h5>RELATIVE CLAUSES / ORAÇÕES RELATIVAS</h5>
+	  <p>As orações relativas são cláusulas que fornecem informações adicionais sobre um substantivo ou pronome em uma sentença.</p>
+	  <p>Elas são iniciadas por pronomes relativos como "who", "which", "that", "whose", "where", "when" e "why".</p>
+	  <p>Existem dois tipos de orações relativas:</p>
+	  <ul>
+        <li><b>Restritivas:</b> Fornecem informações essenciais para identificar o substantivo.</li>
+        <li><b>Explicativas:</b> Fornecem informações adicionais, mas não são essenciais para identificar o substantivo.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>The man <b>who</b> lives next door is very friendly. (Restritiva)</li>
+        <li>My friend, <b>who</b> is a teacher, lives in London. (Explicativa)</li>
+        <li>The book <b>that</b> I borrowed is very interesting. (Restritiva)</li>
+        <li>Paris, <b>where</b> I visited last year, is a beautiful city. (Explicativa)</li>
+	  </ul>
+
+	  <h3>16.2. GERUNDS AND INFINITIVES</h3>
+	  <h4>16.2.1 COMPREENDER OS GERÚNDIOS E INFINITIVOS</h4>
+	  <h5>GERUNDS AND INFINITIVES / GERÚNDIOS E INFINITIVOS</h5>
+	  <p>O gerúndio (-ing) e o infinitivo (to + verbo) são formas não pessoais do verbo que podem funcionar como substantivos, adjetivos ou advérbios.</p>
+	  <p><b>Gerúndio:</b> É formado adicionando o sufixo -ing ao verbo.</p>
+	  <ul>
+        <li>I enjoy <b>swimming</b>. (Substantivo)</li>
+        <li>I'm interested in <b>learning</b> a new language. (Adjetivo)</li>
+        <li>She left <b>crying</b>. (Advérbio)</li>
+	  </ul>
+	  <p><b>Infinitivo:</b> É formado com a palavra "to" seguida do verbo.</p>
+	  <ul>
+        <li>I want <b>to learn</b> French. (Substantivo)</li>
+        <li>She is ready <b>to go</b>. (Adjetivo)</li>
+        <li>He came <b>to help</b> us. (Advérbio)</li>
+	  </ul>
+
+	  <h4>16.2.2 VERBOS SEGUIDOS DE GERÚNDIO OU INFINITIVO</h4>
+	  <p>Alguns verbos são seguidos por gerúndio, outros por infinitivo, e alguns podem ser seguidos por ambos, com diferentes significados.</p>
+	  <ul>
+        <li>I enjoy <b>reading</b> books. (Gerúndio)</li>
+        <li>I want <b>to read</b> that book. (Infinitivo)</li>
+        <li>She stopped <b>smoking</b>. (Gerúndio)</li>
+        <li>She stopped <b>to smoke</b>. (Infinitivo)</li>
+	  </ul>
+
+	  <h3>16.3. CONDITIONAL SENTENCES</h3>
+	  <h4>16.3.1 COMPREENDER AS ORAÇÕES CONDICIONAIS</h4>
+	  <h5>CONDITIONAL SENTENCES / ORAÇÕES CONDICIONAIS</h5>
+	  <p>As orações condicionais são usadas para expressar uma condição e sua consequência.</p>
+	  <p>Existem diferentes tipos de orações condicionais:</p>
+	  <ul>
+        <li><b>Tipo 1 (Condicional Real):</b> If + Present Simple, will/won't + Verb</li>
+        <li><b>Tipo 2 (Condicional Irreal):</b> If + Past Simple, would/wouldn't + Verb</li>
+        <li><b>Tipo 3 (Condicional Irreal no Passado):</b> If + Past Perfect, would/wouldn't + have + Past Participle</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>If it rains, I will stay at home. (Tipo 1)</li>
+        <li>If I had more money, I would buy a new car. (Tipo 2)</li>
+        <li>If I had studied harder, I would have passed the exam. (Tipo 3)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 17</h2>
+	  <h3>17.1. REPORTED SPEECH (CONTINUED)</h3>
+	  <h4>17.1.1 COMPREENDER MAIS SOBRE O DISCURSO INDIRETO</h4>
+	  <p>Continuando o estudo do Discurso Indireto (Reported Speech):</p>
+	  <h5>CHANGES IN REPORTED SPEECH</h5>
+	  <p>Quando transformamos o Discurso Direto em Discurso Indireto, algumas mudanças acontecem:</p>
+	  <ul>
+		<li>Pronomes pessoais e possessivos são ajustados.</li>
+		<li>Advérbios de tempo e lugar são alterados.</li>
+		<li>Tempos verbais geralmente são recuados (presente -> passado).</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>Direct: "I am going to the park." (Eu vou ao parque.)</li>
+		<li>Reported: She said (that) she was going to the park. (Ela disse que ia ao parque.)</li>
+		<li>Direct: "My dog is sleeping." (Meu cachorro está dormindo.)</li>
+		<li>Reported: He said (that) his dog was sleeping. (Ele disse que o cachorro dele estava dormindo.)</li>
+		<li>Direct: "I will come tomorrow." (Eu virei amanhã.)</li>
+		<li>Reported: She said (that) she would come the next day. (Ela disse que viria no dia seguinte.)</li>
+	  </ul>
+
+	  <h3>17.2. QUESTION TAGS</h3>
+	  <h4>17.2.1 COMPREENDER AS QUESTION TAGS</h4>
+	  <h5>QUESTION TAGS / TAGS INTERROGATIVAS</h5>
+	  <p>As Question Tags são pequenas perguntas adicionadas ao final de uma frase declarativa, geralmente para solicitar confirmação ou obter uma resposta.</p>
+	  <p>A estrutura de uma Question Tag é:</p>
+	  <p>Frase Declarativa + Question Tag</p>
+	  <p>A Question Tag é formada pelo auxiliar da frase declarativa + pronome pessoal.</p>
+	  <ul>
+		<li>You are a student, <b>aren't you</b>?</li>
+		<li>She likes chocolate, <b>doesn't she</b>?</li>
+		<li>They haven't finished their work, <b>have they</b>?</li>
+	  </ul>
+	  <p>As Question Tags podem ser usadas para:</p>
+	  <ul>
+		<li>Confirmar uma informação</li>
+		<li>Fazer uma pergunta de forma mais suave</li>
+		<li>Expressar uma opinião ou expectativa</li>
+	  </ul>
+
+	  <h3>17.3. EXCLAMATIONS</h3>
+	  <h4>17.3.1 COMPREENDER AS EXCLAMAÇÕES</h4>
+	  <h5>EXCLAMATIONS / EXCLAMAÇÕES</h5>
+	  <p>As exclamações são usadas para expressar emoções, surpresa, admiração, etc.</p>
+	  <p>Algumas estruturas comuns de exclamações em inglês:</p>
+	  <ul>
+		<li>What + adjetivo + substantivo! (What a beautiful day!)</li>
+		<li>How + adjetivo! (How lovely!)</li>
+		<li>Substantivo + (it is)! (The weather is wonderful!)</li>
+		<li>So + adjetivo! (So delicious!)</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>What a wonderful surprise! (Que surpresa maravilhosa!)</li>
+		<li>How amazing! (Que incrível!)</li>
+		<li>The food is fantastic! (A comida é fantástica!)</li>
+		<li>So cute! (Tão fofo!)</li>
+	  </ul>
+	  <p>As exclamações geralmente terminam com ponto de exclamação (!), mas também podem ser expressas com entonação.</p>
+
+
+	  <h2>UNIDADE 18</h2>
+	  <h3>18.1. PREPOSITIONS OF MOVEMENT</h3>
+	  <h4>18.1.1 COMPREENDER AS PREPOSIÇÕES DE MOVIMENTO</h4>
+	  <h5>PREPOSITIONS OF MOVEMENT / PREPOSIÇÕES DE MOVIMENTO</h5>
+	  <p>As preposições de movimento são usadas para indicar a direção ou o caminho de um movimento.</p>
+	  <table>
+		<tr>
+		  <th>Preposição</th>
+		  <th>Significado</th>
+		</tr>
+		<tr>
+		  <td>to</td>
+		  <td>para</td>
+		</tr>
+		<tr>
+		  <td>into</td>
+		  <td>para dentro de</td>
+		</tr>
+		<tr>
+		  <td>out of</td>
+		  <td>para fora de</td>
+		</tr>
+		<tr>
+		  <td>from</td>
+		  <td>de</td>
+		</tr>
+		<tr>
+		  <td>through</td>
+		  <td>através de</td>
+		</tr>
+		<tr>
+		  <td>across</td>
+		  <td>através de, por cima de</td>
+		</tr>
+		<tr>
+		  <td>over</td>
+		  <td>sobre, por cima de</td>
+		</tr>
+		<tr>
+		  <td>under</td>
+		  <td>sob, por baixo de</td>
+		</tr>
+		<tr>
+		  <td>along</td>
+		  <td>ao longo de</td>
+		</tr>
+		<tr>
+		  <td>past</td>
+		  <td>passando por</td>
+		</tr>
+	  </table>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I'm going <b>to</b> the park. (Estou indo para o parque.)</li>
+		<li>She walked <b>into</b> the room. (Ela entrou no quarto.)</li>
+		<li>The bird flew <b>out of</b> the nest. (O pássaro voou para fora do ninho.)</li>
+		<li>I'm coming <b>from</b> work. (Estou vindo do trabalho.)</li>
+		<li>We drove <b>through</b> the tunnel. (Nós dirigimos através do túnel.)</li>
+	  </ul>
+
+	  <h3>18.2. ARTICLES</h3>
+	  <h4>18.2.1 COMPREENDER OS ARTIGOS</h4>
+	  <h5>ARTICLES / ARTIGOS</h5>
+	  <p>Os artigos são palavras usadas antes de substantivos para indicar se o substantivo é específico ou não.</p>
+	  <p>Os principais artigos em inglês são:</p>
+	  <ul>
+		<li><b>a/an</b> (um/uma) - artigo indefinido</li>
+		<li><b>the</b> (o/a/os/as) - artigo definido</li>
+	  </ul>
+	  <p>Regras de uso:</p>
+	  <ul>
+		<li>Usa-se <b>a</b> antes de substantivos que começam com consoante.</li>
+		<li>Usa-se <b>an</b> antes de substantivos que começam com vogal.</li>
+		<li>Usa-se <b>the</b> quando o substantivo é específico ou único.</li>
+		<li>Não se usa artigo com substantivos no plural que representam uma classe ou grupo.</li>
+		<li>Não se usa artigo com nomes próprios, exceto em alguns casos específicos.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I saw <b>a</b> dog in the park. (Eu vi um cachorro no parque.)</li>
+		<li>Can I have <b>an</b> apple, please? (Posso ter uma maçã, por favor?)</li>
+		<li>The sun is shining brightly today. (O sol está brilhando muito hoje.)</li>
+		<li>Dogs are loyal pets. (Cachorros são animais de estimação leais.)</li>
+		<li>I met <b>the</b> president of the company. (Eu conheci o presidente da empresa.)</li>
+		<li><b>London</b> is a beautiful city. (Londres é uma cidade linda.)</li>
+	  </ul>
+
+	  <h3>18.3. ADVERBS OF MANNER</h3>
+	  <h4>18.3.1 COMPREENDER OS ADVÉRBIOS DE MODO</h4>
+	  <h5>ADVERBS OF MANNER / ADVÉRBIOS DE MODO</h5>
+	  <p>Os advérbios de modo descrevem como uma ação é realizada.</p>
+	  <p>Eles geralmente respondem à pergunta "How?" (Como?).</p>
+	  <p>Alguns exemplos de advérbios de modo:</p>
+	  <ul>
+		<li>Quickly - Rapidamente</li>
+		<li>Carefully - Cuidadosamente</li>
+		<li>Quietly - Silenciosamente</li>
+		<li>Loudly - Alto</li>
+		<li>Slowly - Devagar</li>
+		<li>Happily - Felizmente</li>
+	  </ul>
+	  <p>Exemplos de uso:</p>
+	  <ul>
+		<li>She walked <b>quickly</b> to the bus stop. (Ela caminhou rapidamente até o ponto de ônibus.)</li>
+		<li>He spoke <b>quietly</b> during the meeting. (Ele falou silenciosamente durante a reunião.)</li>
+		<li>The baby cried <b>loudly</b> in the middle of the night. (O bebê chorou alto no meio da noite.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 19</h2>
+	  <h3>19.1. ZERO CONDITIONAL</h3>
+	  <h4>19.1.1 COMPREENDER O ZERO CONDICIONAL</h4>
+	  <h5>ZERO CONDITIONAL / CONDICIONAL ZERO</h5>
+	  <p>O Condicional Zero (Zero Conditional) é usado para expressar fatos ou verdades gerais que são sempre verdadeiros, independentemente da condição.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>If + Present Simple, Present Simple</p>
+	  <ul>
+        <li>If water reaches 100°C, it boils. (Se a água atingir 100°C, ela ferve.)</li>
+        <li>If you heat ice, it melts. (Se você aquecer gelo, ele derrete.)</li>
+        <li>If plants don't get water, they die. (Se as plantas não receberem água, elas morrem.)</li>
+	  </ul>
+	  <p>Observe que tanto a condição quanto a consequência estão no Presente Simples.</p>
+
+	  <h3>19.2. FIRST CONDITIONAL</h3>
+	  <h4>19.2.1 COMPREENDER O PRIMEIRO CONDICIONAL</h4>
+	  <h5>FIRST CONDITIONAL / PRIMEIRO CONDICIONAL</h5>
+	  <p>O Primeiro Condicional (First Conditional) é usado para expressar uma condição e sua consequência prováveis no futuro.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>If + Present Simple, will/won't + Verb</p>
+	  <ul>
+        <li>If it rains, I will take an umbrella. (Se chover, eu levarei um guarda-chuva.)</li>
+        <li>If he studies hard, he will pass the exam. (Se ele estudar muito, ele passará no exame.)</li>
+        <li>If you don't finish your homework, you won't be able to go out. (Se você não terminar sua lição de casa, não poderá sair.)</li>
+	  </ul>
+	  <p>Observe que a condição está no Presente Simples e a consequência usa o futuro com "will" ou "won't".</p>
+
+	  <h3>19.3. SECOND CONDITIONAL</h3>
+	  <h4>19.3.1 COMPREENDER O SEGUNDO CONDICIONAL</h4>
+	  <h5>SECOND CONDITIONAL / SEGUNDO CONDICIONAL</h5>
+	  <p>O Segundo Condicional (Second Conditional) é usado para expressar uma condição e sua consequência hipotéticas ou imaginárias no presente ou futuro.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>If + Past Simple, would/wouldn't + Verb</p>
+	  <ul>
+        <li>If I had a million dollars, I would buy a big house. (Se eu tivesse um milhão de dólares, eu compraria uma casa grande.)</li>
+        <li>If she studied harder, she would get better grades. (Se ela estudasse mais, teria melhores notas.)</li>
+        <li>If they didn't have to work, they wouldn't be so tired. (Se eles não tivessem que trabalhar, não estariam tão cansados.)</li>
+	  </ul>
+	  <p>Observe que a condição está no Passado Simples e a consequência usa o condicional com "would" ou "wouldn't".</p>
+
+
+	  <h2>UNIDADE 20</h2>
+	  <h3>20.1. THIRD CONDITIONAL</h3>
+	  <h4>20.1.1 COMPREENDER O TERCEIRO CONDICIONAL</h4>
+	  <h5>THIRD CONDITIONAL / TERCEIRO CONDICIONAL</h5>
+	  <p>O Terceiro Condicional (Third Conditional) é usado para expressar uma condição e sua consequência hipotéticas no passado.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>If + Past Perfect, would/wouldn't + have + Past Participle</p>
+	  <ul>
+		<li>If I had studied harder, I would have passed the exam. (Se eu tivesse estudado mais, teria passado no exame.)</li>
+		<li>If it hadn't rained, we would have gone to the beach. (Se não tivesse chovido, teríamos ido à praia.)</li>
+		<li>If she had taken an umbrella, she wouldn't have got wet. (Se ela tivesse levado um guarda-chuva, não teria se molhado.)</li>
+	  </ul>
+	  <p>Observe que a condição está no Passado Perfeito e a consequência usa o condicional perfeito com "would/wouldn't + have + Past Participle".</p>
+
+	  <h3>20.2. MIXED CONDITIONALS</h3>
+	  <h4>20.2.1 COMPREENDER OS CONDICIONAIS MISTOS</h4>
+	  <h5>MIXED CONDITIONALS / CONDICIONAIS MISTOS</h5>
+	  <p>Os Condicionais Mistos (Mixed Conditionals) combinam diferentes tipos de condicionais em uma mesma frase.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>If I had studied harder in school, I would be a doctor now. (Terceiro Condicional + Segundo Condicional)</li>
+		<li>If I won the lottery, I would have bought a new car. (Segundo Condicional + Terceiro Condicional)</li>
+		<li>If I didn't have a job, I would be saving money for a vacation. (Segundo Condicional + Primeiro Condicional)</li>
+	  </ul>
+	  <p>Nestes casos, a condição e a consequência não estão no mesmo tempo verbal, o que torna a estrutura mais complexa.</p>
+
+	  <h3>20.3. UNLESS</h3>
+	  <h4>20.3.1 COMPREENDER O USO DE "UNLESS"</h4>
+	  <h5>UNLESS / A MENOS QUE</h5>
+	  <p>A palavra "unless" é usada como uma alternativa à conjunção "if" em orações condicionais, indicando uma exceção.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Unless + Present Simple, will/won't + Verb</p>
+	  <ul>
+		<li>I will go to the party unless it rains. (Eu irei à festa a menos que chova.)</li>
+		<li>She won't come to the meeting unless she finishes her work. (Ela não virá à reunião a menos que termine seu trabalho.)</li>
+		<li>They will not pass the exam unless they study hard. (Eles não passarão no exame a menos que estudem muito.)</li>
+	  </ul>
+	  <p>Observe que a estrutura é similar ao Primeiro Condicional, mas com a palavra "unless" no lugar de "if".</p>
+
+
+	  <h2>UNIDADE 21</h2>
+	  <h3>21.1. PRESENT PERFECT SIMPLE</h3>
+	  <h4>21.1.1 COMPREENDER O PRESENTE PERFEITO SIMPLES</h4>
+	  <h5>PRESENT PERFECT SIMPLE / PRESENTE PERFEITO SIMPLES</h5>
+	  <p>O Presente Perfeito Simples (Present Perfect Simple) é usado para expressar ações que aconteceram no passado, mas têm relação com o presente.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Have/Has + Past Participle</p>
+	  <ul>
+		<li>I have studied English for 5 years. (Eu estudei inglês por 5 anos.)</li>
+		<li>She has finished her homework. (Ela terminou sua lição de casa.)</li>
+		<li>They have not been to the cinema this month. (Eles não foram ao cinema este mês.)</li>
+	  </ul>
+	  <p>Observe que o verbo principal está no Past Participle.</p>
+
+	  <h4>21.1.2 USOS DO PRESENTE PERFEITO SIMPLES</h4>
+	  <p>O Presente Perfeito Simples é usado para expressar:</p>
+	  <ul>
+		<li>Ações concluídas no passado, mas com relevância no presente.</li>
+		<li>Experiências de vida ou atividades habituais no passado.</li>
+		<li>Mudanças ou eventos recentes.</li>
+		<li>Ações que aconteceram em um período de tempo não especificado.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I have read that book before. (Eu já li esse livro antes.)</li>
+		<li>She has traveled to many countries. (Ela viajou para muitos países.)</li>
+		<li>They have just arrived home. (Eles acabaram de chegar em casa.)</li>
+		<li>I have lived in this city for 10 years. (Eu moro nesta cidade há 10 anos.)</li>
+	  </ul>
+
+	  <h3>21.2. PRESENT PERFECT CONTINUOUS</h3>
+	  <h4>21.2.1 COMPREENDER O PRESENTE PERFEITO CONTÍNUO</h4>
+	  <h5>PRESENT PERFECT CONTINUOUS / PRESENTE PERFEITO CONTÍNUO</h5>
+	  <p>O Presente Perfeito Contínuo (Present Perfect Continuous) é usado para expressar uma ação que começou no passado e continua até o presente, ou uma ação que acabou de terminar.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Have/Has + Been + Verb-ing</p>
+	  <ul>
+		<li>I have been studying English for 2 hours. (Eu tenho estudado inglês por 2 horas.)</li>
+		<li>She has been working on the project all week. (Ela tem trabalhado no projeto toda a semana.)</li>
+		<li>They have not been waiting for us. (Eles não têm esperado por nós.)</li>
+	  </ul>
+	  <p>Observe que o verbo principal está no Gerúndio (-ing).</p>
+
+	  <h4>21.2.2 DIFERENÇA ENTRE PRESENTE PERFEITO SIMPLES E CONTÍNUO</h4>
+	  <p>A principal diferença entre o Presente Perfeito Simples e o Presente Perfeito Contínuo é:</p>
+	  <ul>
+		<li><b>Presente Perfeito Simples:</b> Foca no resultado ou conclusão da ação.</li>
+		<li><b>Presente Perfeito Contínuo:</b> Foca na duração e continuidade da ação.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I have written the report. (Presente Perfeito Simples - Foco no resultado)</li>
+		<li>I have been writing the report all day. (Presente Perfeito Contínuo - Foco na duração)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 22</h2>
+	  <h4>22.1.1 COMPREENDER O PASSADO PERFEITO SIMPLES</h4>
+	  <h5>PAST PERFECT SIMPLE / PASSADO PERFEITO SIMPLES</h5>
+	  <p>O Passado Perfeito Simples (Past Perfect Simple) é usado para expressar uma ação que aconteceu antes de outra ação no passado.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Had + Past Participle</p>
+	  <ul>
+		<li>By the time I arrived, the train <b>had left</b>. (Quando cheguei, o trem já tinha partido.)</li>
+		<li>She <b>had finished</b> her homework before her parents came home. (Ela tinha terminado a lição de casa antes de seus pais chegarem.)</li>
+		<li>They <b>had not seen</b> the movie before. (Eles não tinham visto o filme antes.)</li>
+	  </ul>
+	  <p>Observe que a ação expressa no Passado Perfeito Simples aconteceu antes de outra ação no passado.</p>
+
+	  <h3>22.2. PAST PERFECT CONTINUOUS</h3>
+	  <h4>22.2.1 COMPREENDER O PASSADO PERFEITO CONTÍNUO</h4>
+	  <h5>PAST PERFECT CONTINUOUS / PASSADO PERFEITO CONTÍNUO</h5>
+	  <p>O Passado Perfeito Contínuo (Past Perfect Continuous) é usado para expressar uma ação que começou antes de outra ação no passado e continuou até esse momento.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Had + Been + Verb-ing</p>
+	  <ul>
+		<li>By the time I arrived, she <b>had been waiting</b> for 2 hours. (Quando cheguei, ela já estava esperando há 2 horas.)</li>
+		<li>They <b>had been studying</b> for the exam all week before the test. (Eles haviam estado estudando para o exame a semana inteira antes da prova.)</li>
+		<li>I <b>had been working</b> on the project since the beginning of the month. (Eu havia estado trabalhando no projeto desde o início do mês.)</li>
+	  </ul>
+	  <p>Observe que a ação expressa no Passado Perfeito Contínuo começou antes de outra ação no passado e continuou até esse momento.</p>
+
+	  <h3>22.3. PASSIVE VOICE (CONTINUED)</h3>
+	  <h4>22.3.1 COMPREENDER MAIS SOBRE A VOZ PASSIVA</h4>
+	  <p>Continuando o estudo da Voz Passiva:</p>
+	  <h5>PASSIVE VOICE IN DIFFERENT TENSES</h5>
+	  <p>A Voz Passiva pode ser formada em diferentes tempos verbais:</p>
+	  <ul>
+		<li><b>Present Simple Passive:</b> The book is sold in the store. (O livro é vendido na loja.)</li>
+		<li><b>Past Simple Passive:</b> The book was sold in the store. (O livro foi vendido na loja.)</li>
+		<li><b>Present Perfect Passive:</b> The book has been sold in the store. (O livro foi vendido na loja.)</li>
+		<li><b>Past Perfect Passive:</b> The book had been sold in the store. (O livro tinha sido vendido na loja.)</li>
+		<li><b>Future Passive:</b> The book will be sold in the store. (O livro será vendido na loja.)</li>
+	  </ul>
+	  <p>Observe que a estrutura básica é: Sujeito + BE (na forma correta) + Past Participle.</p>
+
+	  <h4>22.3.2 AGENTE DA AÇÃO NA VOZ PASSIVA</h4>
+	  <p>Na Voz Passiva, o agente da ação (quem realiza a ação) pode ser omitido ou incluído usando a preposição "by".</p>
+	  <ul>
+		<li>The window was broken. (A janela foi quebrada.)</li>
+		<li>The window was broken by the vandals. (A janela foi quebrada pelos vândalos.)</li>
+	  </ul>
+	  <p>Geralmente, o agente é incluído quando é importante ou relevante mencionar quem realizou a ação.</p>
+
+	  <h3>22.4. MODAL VERBS (CONTINUED)</h3>
+	  <h4>22.4.1 COMPREENDER MAIS SOBRE OS VERBOS MODAIS</h4>
+	  <p>Continuando o estudo dos Verbos Modais:</p>
+	  <h5>MODAL VERBS IN THE PAST</h5>
+	  <p>Os Verbos Modais também podem ser usados no passado, com algumas diferenças em seu significado:</p>
+	  <ul>
+		<li><b>Could</b> (habilidade no passado): She <b>could</b> speak three languages when she was younger. (Ela podia falar três línguas quando era mais nova.)</li>
+		<li><b>Might</b> (possibilidade no passado): They <b>might</b> have gone to the party last night. (Eles podem ter ido à festa ontem à noite.)</li>
+		<li><b>Should</b> (conselho no passado): You <b>should</b> have studied harder for the exam. (Você deveria ter estudado mais para o exame.)</li>
+		<li><b>Would</b> (hábito no passado): She <b>would</b> always help her neighbors. (Ela sempre ajudava seus vizinhos.)</li>
+	  </ul>
+	  <p>Observe que os Verbos Modais no passado são seguidos pelo infinitivo sem "to".</p>
+
+	  <h4>22.4.2 MODAL PERFECTS</h4>
+	  <p>Além disso, os Verbos Modais também podem ser usados em construções no Passado Perfeito, chamadas de "Modal Perfects".</p>
+	  <ul>
+		<li><b>Could have + Past Participle:</b> She <b>could have passed</b> the exam if she had studied harder. (Ela poderia ter passado no exame se tivesse estudado mais.)</li>
+		<li><b>Might have + Past Participle:</b> They <b>might have missed</b> the train if they had left later. (Eles podem ter perdido o trem se tivessem saído mais tarde.)</li>
+		<li><b>Should have + Past Participle:</b> You <b>should have told</b> me about the meeting. (Você deveria ter me contado sobre a reunião.)</li>
+	  </ul>
+	  <p>Essas construções expressam uma possibilidade, uma capacidade ou uma recomendação no passado.</p>
+
+
+	  <h2>UNIDADE 23</h2>
+	  <h3>23.1. FUTURE PERFECT SIMPLE</h3>
+	  <h4>23.1.1 COMPREENDER O FUTURO PERFEITO SIMPLES</h4>
+	  <h5>FUTURE PERFECT SIMPLE / FUTURO PERFEITO SIMPLES</h5>
+	  <p>O Futuro Perfeito Simples (Future Perfect Simple) é usado para expressar uma ação que será concluída até um determinado momento no futuro.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Will + Have + Past Participle</p>
+	  <ul>
+        <li>By the end of the year, I <b>will have saved</b> enough money to buy a new car. (Até o final do ano, eu terei economizado o suficiente para comprar um carro novo.)</li>
+        <li>They <b>will have finished</b> the project by next month. (Eles terão terminado o projeto até o próximo mês.)</li>
+        <li>She <b>will not have completed</b> the course by the end of the semester. (Ela não terá completado o curso até o final do semestre.)</li>
+	  </ul>
+	  <p>Observe que a ação expressa no Futuro Perfeito Simples será concluída antes de um determinado momento no futuro.</p>
+
+	  <h3>23.2. FUTURE PERFECT CONTINUOUS</h3>
+	  <h4>23.2.1 COMPREENDER O FUTURO PERFEITO CONTÍNUO</h4>
+	  <h5>FUTURE PERFECT CONTINUOUS / FUTURO PERFEITO CONTÍNUO</h5>
+	  <p>O Futuro Perfeito Contínuo (Future Perfect Continuous) é usado para expressar uma ação que começará no passado e continuará até um determinado momento no futuro.</p>
+	  <p>Sua estrutura é:</p>
+	  <p>Subject + Will + Have + Been + Verb-ing</p>
+	  <ul>
+        <li>By the time I retire, I <b>will have been working</b> at this company for 20 years. (Quando me aposentar, terei estado trabalhando nesta empresa por 20 anos.)</li>
+        <li>They <b>will have been studying</b> English for 5 years by the end of the course. (Eles terão estado estudando inglês por 5 anos até o final do curso.)</li>
+        <li>She <b>will not have been waiting</b> for more than an hour when you arrive. (Ela não terá estado esperando por mais de uma hora quando você chegar.)</li>
+	  </ul>
+	  <p>Observe que a ação expressa no Futuro Perfeito Contínuo começou no passado e continuará até um determinado momento no futuro.</p>
+
+	  <h3>23.3. FUTURE TIME CLAUSES</h3>
+	  <h4>23.3.1 COMPREENDER AS ORAÇÕES TEMPORAIS DE FUTURO</h4>
+	  <h5>FUTURE TIME CLAUSES / ORAÇÕES TEMPORAIS DE FUTURO</h5>
+	  <p>As Orações Temporais de Futuro são usadas para indicar quando uma ação no futuro irá ocorrer.</p>
+	  <p>Elas geralmente são introduzidas por conjunções como "when", "as soon as", "until", "before", "after", etc.</p>
+	  <p>Estrutura:</p>
+	  <p>Future Time Clause + Subject + Will/Won't + Verb</p>
+	  <ul>
+        <li><b>When</b> I finish work, I'll call you. (Quando eu terminar o trabalho, eu te ligarei.)</li>
+        <li><b>As soon as</b> the train arrives, we'll get on board. (Assim que o trem chegar, embarcaremos.)</li>
+        <li>I'll wait <b>until</b> you're ready. (Eu esperarei até que você esteja pronto.)</li>
+        <li><b>Before</b> I go to bed, I'll check my emails. (Antes de ir para a cama, eu verificarei meus e-mails.)</li>
+        <li><b>After</b> the concert, we'll go out for dinner. (Depois do show, iremos jantar.)</li>
+	  </ul>
+	  <p>Observe que a oração temporal de futuro geralmente vem antes da oração principal.</p>
+
+	  <h3>23.4. FUTURE TIME EXPRESSIONS</h3>
+	  <h4>23.4.1 COMPREENDER AS EXPRESSÕES DE TEMPO FUTURO</h4>
+	  <h5>FUTURE TIME EXPRESSIONS / EXPRESSÕES DE TEMPO FUTURO</h5>
+	  <p>Existem várias expressões de tempo que podem ser usadas para indicar o futuro:</p>
+	  <ul>
+        <li>Tomorrow (Amanhã)</li>
+        <li>Next week/month/year (Próxima semana/mês/ano)</li>
+        <li>In the future (No futuro)</li>
+        <li>Soon (Em breve)</li>
+        <li>Eventually (Eventualmente)</li>
+        <li>One day (Um dia)</li>
+        <li>From now on (A partir de agora)</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>I'll finish the project <b>tomorrow</b>. (Eu terminarei o projeto amanhã.)</li>
+        <li>We're going on vacation <b>next month</b>. (Vamos de férias no próximo mês.)</li>
+        <li><b>One day</b>, I'll travel around the world. (Um dia, eu viajarei pelo mundo.)</li>
+	  </ul>
+
+
+	  <h2>UNIDADE 24</h2>
+	  <h3>24.1. DETERMINERS</h3>
+	  <h4>24.1.1 COMPREENDER OS DETERMINANTES</h4>
+	  <h5>DETERMINERS / DETERMINANTES</h5>
+	  <p>Os Determinantes são palavras que precedem os substantivos e fornecem informações sobre eles, como quantidade, posse ou definição.</p>
+	  <p>Alguns tipos de Determinantes:</p>
+	  <ul>
+		<li><b>Artigos:</b> a, an, the</li>
+		<li><b>Demonstrativos:</b> this, that, these, those</li>
+		<li><b>Possessivos:</b> my, your, his, her, its, our, their</li>
+		<li><b>Quantificadores:</b> some, any, no, many, few, a lot of, much</li>
+		<li><b>Numerais:</b> one, two, three, etc.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>The</b> book is on <b>the</b> table. (O livro está na mesa.)</li>
+		<li><b>This</b> car is newer than <b>that</b> one. (Este carro é mais novo do que aquele.)</li>
+		<li><b>My</b> friend lives in <b>their</b> house. (Meu amigo mora na casa deles.)</li>
+		<li>I have <b>a few</b> books to read. (Eu tenho alguns livros para ler.)</li>
+		<li><b>Two</b> people are waiting for the bus. (Duas pessoas estão esperando o ônibus.)</li>
+	  </ul>
+
+	  <h3>24.2. NOUN PHRASES</h3>
+	  <h4>24.2.1 COMPREENDER AS FRASES NOMINAIS</h4>
+	  <h5>NOUN PHRASES / FRASES NOMINAIS</h5>
+	  <p>As Frases Nominais são construções que incluem um substantivo como núcleo, acompanhado de outros elementos como determinantes, adjetivos, etc.</p>
+	  <p>Estrutura básica de uma Frase Nominal:</p>
+	  <p>(Determinante) + (Adjetivo) + Substantivo + (Modificador)</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>The big dog</b> barked loudly. (O cachorro grande latiu alto.)</li>
+		<li><b>My new car</b> is very fast. (Meu carro novo é muito rápido.)</li>
+		<li><b>Those three interesting books</b> are on the shelf. (Aqueles três livros interessantes estão na estante.)</li>
+		<li><b>The house with the blue door</b> is mine. (A casa com a porta azul é minha.)</li>
+	  </ul>
+	  <p>As Frases Nominais podem ser expandidas com adjetivos, orações relativas, preposições, etc. para fornecer mais informações sobre o substantivo.</p>
+
+	  <h3>24.3. EMBEDDED QUESTIONS</h3>
+	  <h4>24.3.1 COMPREENDER AS PERGUNTAS EMBUTIDAS</h4>
+	  <h5>EMBEDDED QUESTIONS / PERGUNTAS EMBUTIDAS</h5>
+	  <p>As Perguntas Embutidas são perguntas que estão dentro de uma frase declarativa, geralmente introduzidas por palavras como "if", "whether", "when", "where", "why", "how", etc.</p>
+	  <p>Estrutura:</p>
+	  <p>Subject + Verb + Embedded Question</p>
+	  <ul>
+		<li>Can you tell me <b>where the post office is</b>? (Você pode me dizer onde fica o correio?)</li>
+		<li>I wonder <b>if she is coming to the party</b>. (Eu me pergunto se ela está vindo à festa.)</li>
+		<li>Do you know <b>when the train arrives</b>? (Você sabe quando o trem chega?)</li>
+		<li>She asked me <b>how I got here</b>. (Ela me perguntou como eu cheguei aqui.)</li>
+	  </ul>
+	  <p>Observe que a estrutura da pergunta embutida é a mesma da pergunta direta, mas ela é incorporada à frase declarativa.</p>
+
+	  <h3>24.4. INDIRECT QUESTIONS</h3>
+	  <h4>24.4.1 COMPREENDER AS PERGUNTAS INDIRETAS</h4>
+	  <h5>INDIRECT QUESTIONS / PERGUNTAS INDIRETAS</h5>
+	  <p>As Perguntas Indiretas são usadas para fazer perguntas de forma mais formal ou educada.</p>
+	  <p>Estrutura:</p>
+	  <p>Subject + Verb + (if/whether) + Pronoun + Verb</p>
+	  <ul>
+		<li>Could you tell me <b>if/whether you have the time</b>? (Você poderia me dizer se você tem a hora?)</li>
+		<li>I'd like to know <b>where the nearest bank is</b>. (Eu gostaria de saber onde fica o banco mais próximo.)</li>
+		<li>Do you know <b>what time the meeting starts</b>? (Você sabe que horas começa a reunião?)</li>
+		<li>Could you please let me know <b>how much the tickets cost</b>? (Você poderia me informar quanto custam os ingressos?)</li>
+	  </ul>
+	  <p>Observe que as Perguntas Indiretas não usam a inversão sujeito-verbo como nas perguntas diretas.</p>
+
+
+	  <h2>UNIDADE 25</h2>
+	  <h3>25.1. RELATIVE CLAUSES (CONTINUED)</h3>
+	  <h4>25.1.1 COMPREENDER MAIS SOBRE AS ORAÇÕES RELATIVAS</h4>
+	  <p>Continuando o estudo das Orações Relativas:</p>
+	  <h5>RELATIVE PRONOUNS IN OBJECT POSITION</h5>
+	  <p>Quando o pronome relativo é o objeto da oração relativa, ele pode ser omitido em alguns casos.</p>
+	  <ul>
+        <li>The book <b>that</b> I read was very interesting. (O livro que eu li era muito interessante.)</li>
+        <li>The book <b>Ø</b> I read was very interesting. (O livro que eu li era muito interessante.)</li>
+	  </ul>
+	  <p>Observe que o pronome relativo "that" pode ser omitido quando é o objeto da oração relativa.</p>
+
+	  <h4>25.1.2 ORAÇÕES RELATIVAS RESTRITIVAS E EXPLICATIVAS</h4>
+	  <p>As Orações Relativas podem ser divididas em dois tipos:</p>
+	  <ul>
+        <li><b>Restritivas:</b> Fornecem informações essenciais para identificar o substantivo.</li>
+        <li><b>Explicativas:</b> Fornecem informações adicionais, mas não são essenciais para identificar o substantivo.</li>
+	  </ul>
+	  <p>Diferenças:</p>
+	  <ul>
+        <li>As Restritivas não são separadas por vírgulas, enquanto as Explicativas são.</li>
+        <li>As Restritivas são essenciais para o significado da frase, enquanto as Explicativas são opcionais.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>The student <b>who</b> won the award is very talented. (Restritiva)</li>
+        <li>My friend, <b>who</b> is a teacher, lives in London. (Explicativa)</li>
+	  </ul>
+
+	  <h3>25.2. CLEFT SENTENCES</h3>
+	  <h4>25.2.1 COMPREENDER AS FRASES CLIVADAS</h4>
+	  <h5>CLEFT SENTENCES / FRASES CLIVADAS</h5>
+	  <p>As Frases Clivadas são estruturas usadas para dar ênfase a uma parte específica da frase.</p>
+	  <p>Estrutura:</p>
+	  <p>It + is/was + (pronoun/noun) + that/who + rest of the sentence</p>
+	  <ul>
+        <li>It was <b>John</b> <b>who</b> won the race. (Foi John que ganhou a corrida.)</li>
+        <li>It is <b>the book</b> <b>that</b> I want to read. (É o livro que eu quero ler.)</li>
+        <li>It was <b>yesterday</b> <b>when</b> I saw her. (Foi ontem quando eu a vi.)</li>
+	  </ul>
+	  <p>Observe que a parte enfatizada da frase é destacada pela estrutura clivada.</p>
+
+	  <h3>25.3. INVERSION</h3>
+	  <h4>25.3.1 COMPREENDER A INVERSÃO</h4>
+	  <h5>INVERSION / INVERSÃO</h5>
+	  <p>A Inversão é uma estrutura em que o verbo vem antes do sujeito, geralmente em frases com advérbios ou expressões que indicam lugar, tempo ou modo.</p>
+	  <p>Estrutura:</p>
+	  <p>Adverb/Expression + Verb + Subject</p>
+	  <ul>
+        <li><b>Never</b> have I seen such a beautiful sunset. (Nunca vi um pôr do sol tão bonito.)</li>
+        <li><b>Only then</b> did she realize her mistake. (Só então ela percebeu seu erro.)</li>
+        <li><b>Under no circumstances</b> should you tell anyone. (Em nenhuma circunstância você deve contar a alguém.)</li>
+        <li><b>Rarely</b> do they go to the movies. (Raramente eles vão ao cinema.)</li>
+	  </ul>
+	  <p>A Inversão é usada para dar ênfase a certas partes da frase ou para criar um efeito estilístico.</p>
+
+	  <h3>25.4. EMPHASIS</h3>
+	  <h4>25.4.1 COMPREENDER A ÊNFASE</h4>
+	  <h5>EMPHASIS / ÊNFASE</h5>
+	  <p>Existem diferentes maneiras de enfatizar ou dar destaque a certas partes de uma frase em inglês:</p>
+	  <ul>
+        <li><b>Frases Clivadas:</b> It was John who won the race.</li>
+        <li><b>Inversão:</b> Never have I seen such a beautiful sunset.</li>
+        <li><b>Advérbios de ênfase:</b> I really enjoyed the movie.</li>
+        <li><b>Ênfase com "do":</b> I do love chocolate ice cream.</li>
+        <li><b>Ênfase com "it":</b> It was a great party.</li>
+	  </ul>
+	  <p>Essas estruturas são usadas para destacar informações específicas e dar mais ênfase a determinados elementos da frase.</p>
+
+
+	  <h2>UNIDADE 26</h2>
+	  <h3>26.1. REPORTED SPEECH (CONTINUED)</h3>
+	  <h4>26.1.1 COMPREENDER MAIS SOBRE O DISCURSO INDIRETO</h4>
+	  <p>Continuando o estudo do Discurso Indireto (Reported Speech):</p>
+	  <h5>REPORTING COMMANDS AND REQUESTS</h5>
+	  <p>Para relatar comandos e pedidos no Discurso Indireto, usamos a seguinte estrutura:</p>
+	  <p>Subject + Verb (say, tell, etc.) + (Object) + to + Verb (infinitivo)</p>
+	  <ul>
+		<li>He <b>said to me</b> to turn off the light. (Ele me <b>disse</b> para apagar a luz.)</li>
+		<li>The teacher <b>told us</b> to bring our textbooks to class. (O professor <b>nos disse</b> para trazer nossos livros para a aula.)</li>
+		<li>She <b>asked me</b> to help her with the project. (Ela <b>me pediu</b> para ajudá-la com o projeto.)</li>
+	  </ul>
+	  <p>Observe que o verbo principal é transformado no infinitivo.</p>
+
+	  <h4>26.1.2 REPORTING QUESTIONS</h4>
+	  <p>Para relatar perguntas no Discurso Indireto, usamos a seguinte estrutura:</p>
+	  <p>Subject + Verb (ask, wonder, etc.) + (Object) + if/whether + Subject + Verb</p>
+	  <ul>
+		<li>She <b>asked me</b> <b>if</b> I was going to the party. (Ela <b>me perguntou</b> se eu ia à festa.)</li>
+		<li>I <b>wondered</b> <b>whether</b> they would be able to come. (Eu <b>me perguntei</b> se eles conseguiriam vir.)</li>
+		<li>The receptionist <b>asked him</b> <b>what time</b> the meeting started. (A recepcionista <b>perguntou a ele</b> que horas a reunião começava.)</li>
+	  </ul>
+	  <p>Observe que as perguntas são transformadas em orações subordinadas.</p>
+
+	  <h3>26.2. CONDITIONALS (CONTINUED)</h3>
+	  <h4>26.2.1 COMPREENDER MAIS SOBRE AS ORAÇÕES CONDICIONAIS</h4>
+	  <p>Continuando o estudo das Orações Condicionais:</p>
+	  <h5>MIXED CONDITIONALS (CONTINUED)</h5>
+	  <p>Além dos tipos de condicionais vistos anteriormente, também existem os Condicionais Mistos que combinam diferentes tempos verbais.</p>
+	  <ul>
+		<li><b>If + Past Perfect, would + Verb:</b> If I had studied harder in school, I would be a doctor now.</li>
+		<li><b>If + Past Simple, would have + Past Participle:</b> If I won the lottery, I would have bought a new car.</li>
+		<li><b>If + Present Simple, would + Verb:</b> If I don't have a job, I would save money for a vacation.</li>
+	  </ul>
+	  <p>Esses tipos de condicionais mistos são mais complexos e expressam combinações de condições e consequências hipotéticas.</p>
+
+	  <h4>26.2.2 INVERTED CONDITIONALS</h4>
+	  <p>Outra variação das Orações Condicionais são as Condicionais Invertidas, que começam com a consequência e depois apresentam a condição.</p>
+	  <p>Estrutura:</p>
+	  <p>Would + Subject + Verb, if + Subject + Verb</p>
+	  <ul>
+		<li><b>Would I be happy</b>, if I won the lottery? (Eu ficaria feliz se ganhasse na loteria?)</li>
+		<li><b>Would they have come</b>, if we had invited them? (Eles teriam vindo se os tivéssemos convidado?)</li>
+		<li><b>Would she study harder</b>, if she wanted to pass the exam? (Ela estudaria mais se quisesse passar no exame?)</li>
+	  </ul>
+	  <p>Esse tipo de estrutura inverte a ordem usual da condição e da consequência, enfatizando a consequência.</p>
+
+	  <h3>26.3. GERUNDS AND INFINITIVES (CONTINUED)</h3>
+	  Continuando a partir da última parte sobre Gerúndios e Infinitivos:
+
+	  <h4>26.3.1 COMPREENDER MAIS SOBRE GERÚNDIOS E INFINITIVOS</h4>
+	  <p>Continuando o estudo de Gerúndios e Infinitivos:</p>
+	  <h5>VERBS FOLLOWED BY GERUNDS OR INFINITIVES</h5>
+	  <p>Alguns verbos são seguidos por gerúndios, outros por infinitivos, e alguns podem ser seguidos por ambos, com diferentes significados.</p>
+	  <ul>
+		<li><b>Verbos seguidos de gerúndio:</b> enjoy, finish, keep, stop, avoid, postpone, etc.</li>
+		<li><b>Verbos seguidos de infinitivo:</b> want, decide, hope, agree, promise, refuse, etc.</li>
+		<li><b>Verbos seguidos de gerúndio ou infinitivo:</b> begin, continue, start, try, like, love, hate, etc.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I <b>enjoy reading</b> books. (Eu gosto de ler livros.)</li>
+		<li>I <b>want to read</b> that book. (Eu quero ler aquele livro.)</li>
+		<li>She <b>started working</b> on the project. (Ela começou a trabalhar no projeto.)</li>
+		<li>She <b>started to work</b> on the project. (Ela começou a trabalhar no projeto.)</li>
+	  </ul>
+	  <p>Observe que a escolha entre gerúndio ou infinitivo pode alterar o significado da frase.</p>
+
+	  <h4>26.3.2 COMPLEX GERUND AND INFINITIVE STRUCTURES</h4>
+	  <p>Gerúndios e Infinitivos também podem ser usados em estruturas mais complexas:</p>
+	  <ul>
+		<li><b>Sujeito + Verbo + Objeto + to + Verb:</b> I want you to help me.</li>
+		<li><b>Sujeito + Verbo + Objeto + Verb-ing:</b> I saw him walking in the park.</li>
+		<li><b>Sujeito + Verbo + Adjetivo + to + Verb:</b> She is ready to start the project.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>I encouraged my friend <b>to apply</b> for the job. (Eu incentivei meu amigo a se candidatar à vaga.)</li>
+		<li>I remember <b>seeing</b> the movie last year. (Eu me lembro de ter visto o filme no ano passado.)</li>
+		<li>The team is <b>eager to win</b> the championship. (A equipe está ansiosa para ganhar o campeonato.)</li>
+	  </ul>
+	  <p>Essas estruturas mais complexas envolvem o uso de gerúndios e infinitivos em conjunto com outros elementos da frase.</p>
+
+	  <h3>26.4. PREFIXES AND SUFFIXES</h3>
+	  <h4>26.4.1 COMPREENDER PREFIXOS E SUFIXOS</h4>
+	  <h5>PREFIXES AND SUFFIXES / PREFIXOS E SUFIXOS</h5>
+	  <p>Prefixos e sufixos são pequenas unidades que podem ser adicionadas a palavras para modificar seu significado ou formar novas palavras.</p>
+	  <h5>PREFIXES / PREFIXOS</h5>
+	  <p>Alguns prefixos comuns:</p>
+	  <ul>
+		<li><b>un-:</b> unhappy, undo, unfair</li>
+		<li><b>re-:</b> rewrite, return, rebuild</li>
+		<li><b>dis-:</b> disagree, disconnect, disappoint</li>
+		<li><b>mis-:</b> misjudge, misunderstand, mistake</li>
+		<li><b>pre-:</b> preplan, prewar, pretest</li>
+		<li><b>sub-:</b> subgroup, subheading, submarine</li>
+	  </ul>
+	  <h5>SUFFIXES / SUFIXOS</h5>
+	  <p>Alguns sufixos comuns:</p>
+	  <ul>
+		<li><b>-ing:</b> walking, singing, reading</li>
+		<li><b>-ed:</b> wanted, played, studied</li>
+		<li><b>-s/-es:</b> books, watches, boxes</li>
+		<li><b>-er/-or:</b> teacher, actor, runner</li>
+		<li><b>-ful:</b> careful, beautiful, useful</li>
+		<li><b>-ness:</b> happiness, kindness, sadness</li>
+	  </ul>
+	  <p>O uso de prefixos e sufixos permite criar novas palavras a partir de raízes existentes, expandindo o vocabulário.</p>
+
+
+	  <h2>UNIDADE 27</h2>
+	  <h3>27.1. ADJECTIVE CLAUSES</h3>
+	  <h4>27.1.1 COMPREENDER AS ORAÇÕES ADJETIVAS</h4>
+	  <h5>ADJECTIVE CLAUSES / ORAÇÕES ADJETIVAS</h5>
+	  <p>As Orações Adjetivas são orações subordinadas que modificam um substantivo ou pronome na oração principal.</p>
+	  <p>Elas são introduzidas por pronomes relativos como "who", "which", "that", "whose", "where", "when".</p>
+	  <p>Estrutura:</p>
+	  <p>Noun/Pronoun + Relative Pronoun + Verb + Rest of the Clause</p>
+	  <ul>
+        <li>The man <b>who</b> lives next door is very friendly. (O homem que mora ao lado é muito simpático.)</li>
+        <li>The book <b>which</b> I borrowed is very interesting. (O livro que eu peguei emprestado é muito interessante.)</li>
+        <li>The city <b>where</b> I was born is beautiful. (A cidade onde nasci é linda.)</li>
+	  </ul>
+	  <p>As Orações Adjetivas podem ser restritivas (essenciais) ou explicativas (adicionais).</p>
+
+	  <h3>27.2. COMPLEX SENTENCES</h3>
+	  <h4>27.2.1 COMPREENDER FRASES COMPLEXAS</h4>
+	  <h5>COMPLEX SENTENCES / FRASES COMPLEXAS</h5>
+	  <p>As Frases Complexas são compostas por uma oração principal e uma ou mais orações subordinadas.</p>
+	  <p>Alguns tipos de orações subordinadas:</p>
+	  <ul>
+        <li><b>Orações Adjetivas:</b> The man who lives next door is very friendly.</li>
+        <li><b>Orações Adverbiais:</b> I'll go to the park if the weather is nice.</li>
+        <li><b>Orações Substantivas:</b> I know that she is coming to the party.</li>
+	  </ul>
+	  <p>Estrutura de uma Frase Complexa:</p>
+	  <p>Main Clause + Subordinate Clause</p>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>I will go to the park <b>if the weather is nice</b>. (Oração Adverbial)</li>
+        <li>The student <b>who got the highest grade</b> won the scholarship. (Oração Adjetiva)</li>
+        <li><b>That she passed the exam</b> was a surprise to everyone. (Oração Substantiva)</li>
+	  </ul>
+	  <p>O uso de orações subordinadas torna as frases mais complexas e detalhadas.</p>
+
+	  <h3>27.3. PARTICIPLES</h3>
+	  <h4>27.3.1 COMPREENDER OS PARTICÍPIOS</h4>
+	  <h5>PARTICIPLES / PARTICÍPIOS</h5>
+	  <p>Os Particípios são formas verbais que podem funcionar como adjetivos, modificando substantivos.</p>
+	  <p>Existem dois tipos de Particípios:</p>
+	  <ul>
+        <li><b>Particípio Presente (-ing):</b> The <b>walking</b> man is my neighbor. (O homem andando é meu vizinho.)</li>
+        <li><b>Particípio Passado (Past Participle):</b> The <b>broken</b> window needs to be fixed. (A janela quebrada precisa ser consertada.)</li>
+	  </ul>
+	  <p>Os Particípios podem ser usados:</p>
+	  <ul>
+        <li>Sozinhos, modificando um substantivo: The <b>smiling</b> girl is my sister.</li>
+        <li>Em frases reduzidas: <b>Sitting</b> in the park, she read a book. (Sentada no parque, ela lia um livro.)</li>
+        <li>Em construções passivas: The window was <b>broken</b> by the vandals. (A janela foi quebrada pelos vândalos.)</li>
+	  </ul>
+
+	  <h3>27.4. REDUCED RELATIVE CLAUSES</h3>
+	  <h4>27.4.1 COMPREENDER AS ORAÇÕES RELATIVAS REDUZIDAS</h4>
+	  <h5>REDUCED RELATIVE CLAUSES / ORAÇÕES RELATIVAS REDUZIDAS</h5>
+	  <p>As Orações Relativas Reduzidas são uma forma mais concisa de expressar uma oração relativa, omitindo o pronome relativo e o verbo "to be".</p>
+	  <p>Estrutura:</p>
+	  <p>Noun + Participle (Present or Past)</p>
+	  <ul>
+        <li>The man <b>sitting</b> on the bench is my father. (O homem que está sentado no banco é meu pai.)</li>
+        <li>The book <b>written</b> by that author is very popular. (O livro que foi escrito por esse autor é muito popular.)</li>
+	  </ul>
+	  <p>Esse tipo de estrutura é comum em textos mais formais ou técnicos, onde a concisão é importante.</p>
+
+
+	  <h2>UNIDADE 28</h2>
+	  <h3>28.1. SUBJUNCTIVE</h3>
+	  <h4>28.1.1 COMPREENDER O SUBJUNTIVO</h4>
+	  <h5>SUBJUNCTIVE / SUBJUNTIVO</h5>
+	  <p>O Subjuntivo é uma forma verbal usada para expressar desejos, recomendações, pedidos e outras expressões subjetivas.</p>
+	  <p>Em inglês, o Subjuntivo é usado em algumas estruturas específicas:</p>
+	  <ul>
+		<li><b>Desejos e sugestões:</b> I suggest that he <b>be</b> more careful. (Eu sugiro que ele seja mais cuidadoso.)</li>
+		<li><b>Orações com "that" após verbos como "suggest", "recommend", "insist", etc.:</b> They insisted that he <b>attend</b> the meeting. (Eles insistiram que ele comparecesse à reunião.)</li>
+		<li><b>Expressões com "If I were you":</b> If I <b>were</b> you, I would take the job. (Se eu fosse você, eu aceitaria o emprego.)</li>
+	  </ul>
+	  <p>Observe que o Subjuntivo geralmente usa a forma base do verbo (sem "s" na 3ª pessoa do singular) ou a forma "were" para o verbo "to be".</p>
+
+	  <h3>28.2. UNREAL CONDITIONALS</h3>
+	  <h4>28.2.1 COMPREENDER AS ORAÇÕES CONDICIONAIS IRREAIS</h4>
+	  <h5>UNREAL CONDITIONALS / ORAÇÕES CONDICIONAIS IRREAIS</h5>
+	  <p>As Orações Condicionais Irreais são usadas para expressar situações imaginárias ou hipotéticas que não correspondem à realidade.</p>
+	  <p>Tipos de Orações Condicionais Irreais:</p>
+	  <ul>
+		<li><b>Tipo 2:</b> If + Past Simple, would + Verb (Irreal no presente)</li>
+		<li><b>Tipo 3:</b> If + Past Perfect, would + have + Past Participle (Irreal no passado)</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>If I had more money, I would buy a new car.</b> (Tipo 2 - Irreal no presente)</li>
+		<li><b>If I had studied harder, I would have passed the exam.</b> (Tipo 3 - Irreal no passado)</li>
+	  </ul>
+	  <p>Observe que essas estruturas usam formas verbais hipotéticas para expressar situações contrárias à realidade.</p>
+
+	  <h3>28.3. INVERSION WITH NEGATIVE ADVERBS</h3>
+	  <h4>28.3.1 COMPREENDER A INVERSÃO COM ADVÉRBIOS NEGATIVOS</h4>
+	  <h5>INVERSION WITH NEGATIVE ADVERBS / INVERSÃO COM ADVÉRBIOS NEGATIVOS</h5>
+	  <p>A Inversão com Advérbios Negativos ocorre quando um advérbio negativo inicia a frase, levando à inversão do sujeito e do verbo.</p>
+	  <p>Estrutura:</p>
+	  <p>Negative Adverb + Verb + Subject</p>
+	  <ul>
+		<li><b>Never</b> have I seen such a beautiful sunset. (Nunca vi um pôr do sol tão bonito.)</li>
+		<li><b>Rarely</b> does she go to the movies. (Raramente ela vai ao cinema.)</li>
+		<li><b>Under no circumstances</b> should you tell anyone. (Em nenhuma circunstância você deve contar a alguém.)</li>
+	  </ul>
+	  <p>Essa estrutura é usada para dar ênfase à parte negativa da frase.</p>
+
+	  <h3>28.4. PARALLELISM</h3>
+	  <h3>28.4. PARALLELISM</h3>
+	  <h4>28.4.1 COMPREENDER O PARALELISMO</h4>
+	  <h5>PARALLELISM / PARALELISMO</h5>
+	  <p>O Paralelismo é o uso de estruturas gramaticais semelhantes para criar equilíbrio e coerência em uma frase ou lista.</p>
+	  <p>Exemplos de Paralelismo:</p>
+	  <ul>
+		<li>She likes to sing, dance, and <b>paint</b>. (Verbos no infinitivo)</li>
+		<li>The manager is hardworking, reliable, and <b>efficient</b>. (Adjetivos)</li>
+		<li>I enjoy reading novels, <b>watching movies</b>, and <b>listening to music</b>. (Gerúndios)</li>
+	  </ul>
+	  <p>O uso do Paralelismo torna a linguagem mais clara, elegante e fácil de entender.</p>
+
+	  <h3>28.5. DISCOURSE MARKERS</h3>
+	  <h4>28.5.1 COMPREENDER OS MARCADORES DISCURSIVOS</h4>
+	  <h5>DISCOURSE MARKERS / MARCADORES DISCURSIVOS</h5>
+	  <p>Os Marcadores Discursivos são palavras ou expressões que ajudam a organizar e estruturar o discurso, facilitando a compreensão do ouvinte.</p>
+	  <p>Alguns exemplos de Marcadores Discursivos:</p>
+	  <ul>
+		<li><b>Para adicionar informação:</b> and, also, furthermore, in addition</li>
+		<li><b>Para contrastrar:</b> but, however, on the other hand, instead</li>
+		<li><b>Para dar exemplos:</b> for instance, for example, such as</li>
+		<li><b>Para concluir:</b> in conclusion, finally, overall, all in all</li>
+		<li><b>Para indicar sequência:</b> first, second, next, then, finally</li>
+	  </ul>
+	  <p>O uso apropriado dos Marcadores Discursivos torna o discurso mais coeso e organizado.</p>
+
+
+	  <h2>UNIDADE 29</h2>
+	  <h3>29.1. QUANTIFIERS (CONTINUED)</h3>
+	  <h4>29.1.1 COMPREENDER MAIS SOBRE OS QUANTIFICADORES</h4>
+	  <p>Continuando o estudo dos Quantificadores:</p>
+	  <h5>QUANTIFIERS WITH COUNT AND NON-COUNT NOUNS</h5>
+	  <p>A escolha do quantificador depende se o substantivo é contável (count noun) ou não contável (non-count noun).</p>
+	  <ul>
+        <li><b>Substantivos contáveis:</b> a/an, some, any, many, few, a few</li>
+        <li><b>Substantivos não contáveis:</b> some, any, much, little, a little</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li>I have <b>a</b> book. (Contável)</li>
+        <li>I have <b>some</b> books. (Contável)</li>
+        <li>I have <b>some</b> water. (Não contável)</li>
+        <li>I have <b>little</b> patience. (Não contável)</li>
+	  </ul>
+
+	  <h4>29.1.2 QUANTIFIERS WITH PLURAL NOUNS</h4>
+	  <p>Quando usamos quantificadores com substantivos no plural, algumas regras específicas se aplicam:</p>
+	  <ul>
+        <li><b>Many, few:</b> Many books, few books</li>
+        <li><b>A lot of, lots of:</b> A lot of books, lots of books</li>
+        <li><b>Some, any:</b> Some books, any books</li>
+        <li><b>No:</b> No books</li>
+	  </ul>
+	  <p>Observe que "a few" e "a little" significam uma pequena quantidade, enquanto "few" e "little" significam uma quantidade insuficiente.</p>
+
+	  <h3>29.2. ARTICLES (CONTINUED)</h3>
+	  <h4>29.2.1 COMPREENDER MAIS SOBRE OS ARTIGOS</h4>
+	  <p>Continuando o estudo dos Artigos:</p>
+	  <h5>ARTICLES WITH ABSTRACT NOUNS</h5>
+	  <p>Quando usamos artigos com substantivos abstratos (que não podem ser contados), as regras são um pouco diferentes:</p>
+	  <ul>
+        <li><b>The:</b> usado para indicar algo específico ou único: The happiness I feel is genuine.</li>
+        <li><b>A/an:</b> não é usado com substantivos abstratos.</li>
+        <li><b>Zero article:</b> usado para falar de maneira geral sobre o substantivo abstrato: Happiness is important in life.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li><b>The</b> love I have for my family is unconditional.</li>
+        <li>Honesty is <b>a</b> virtue. (Uso incorreto com substantivo abstrato)</li>
+        <li><b>Courage</b> is necessary to face our fears.</li>
+	  </ul>
+
+	  <h4>29.2.2 ARTICLES WITH PROPER NOUNS</h4>
+	  <p>O uso de artigos com Nomes Próprios também segue algumas regras:</p>
+	  <ul>
+        <li><b>Sem artigo:</b> usado com a maioria dos Nomes Próprios: <b>John</b>, <b>Paris</b>, <b>Monday</b></li>
+        <li><b>The:</b> usado com alguns Nomes Próprios: <b>the United States</b>, <b>the Amazon</b>, <b>the Nile</b></li>
+        <li><b>A/an:</b> usado com profissões ou títulos: <b>a doctor</b>, <b>an engineer</b></li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li><b>The</b> Eiffel Tower is in <b>Paris</b>.</li>
+        <li>My friend <b>Mary</b> is <b>a</b> teacher.</li>
+        <li><b>The</b> Amazon is the largest rainforest in the world.</li>
+	  </ul>
+
+	  <h3>29.3. ADJECTIVES (CONTINUED)</h3>
+	  <h4>29.3.1 COMPREENDER MAIS SOBRE OS ADJETIVOS</h4>
+	  <p>Continuando o estudo dos Adjetivos:</p>
+	  <h5>ADJECTIVE ORDER</h5>
+	  <p>Quando usamos múltiplos adjetivos em uma frase, existe uma ordem padrão para eles:</p>
+	  <ol>
+        <li>Opinião (beautiful, ugly, nice)</li>
+        <li>Tamanho (big, small, huge)</li>
+        <li>Idade (old, young, new)</li>
+        <li>Forma (round, square, rectangular)</li>
+        <li>Cor (red, blue, green)</li>
+        <li>Origem (French, Italian, Japanese)</li>
+        <li>Material (wooden, metal, glass)</li>
+        <li>Propósito (cooking, sleeping, working)</li>
+	  </ol>
+	  <p>Exemplo: <b>The beautiful, big, old, round, red, Italian, wooden table</b>.</p>
+
+	  <h4>29.3.2 ADJECTIVES AS NOUNS</h4>
+	  <p>Os adjetivos também podem ser usados como substantivos, referindo-se a uma classe ou grupo de pessoas:</p>
+	  <ul>
+        <li>The <b>rich</b> should help the <b>poor</b>. (Os ricos deveriam ajudar os pobres.)</li>
+        <li>The <b>young</b> are often more energetic than the <b>old</b>. (Os jovens são frequentemente mais energéticos do que os idosos.)</li>
+        <li>We should respect our <b>elders</b>. (Nós devemos respeitar nossos mais velhos.)</li>
+	  </ul>
+	  <p>Nesse caso, o adjetivo é substantivado e recebe o artigo "the" para se referir a um grupo específico.</p>
+
+
+	  <h2>UNIDADE 30</h2>
+	  <h3>30.1. RELATIVE CLAUSES (CONTINUED)</h3>
+	  <h4>30.1.1 COMPREENDER MAIS SOBRE AS ORAÇÕES RELATIVAS</h4>
+	  <p>Continuando o estudo das Orações Relativas:</p>
+	  <h5>DEFINING AND NON-DEFINING RELATIVE CLAUSES</h5>
+	  <p>As Orações Relativas podem ser classificadas em dois tipos:</p>
+	  <ul>
+		<li><b>Restritivas (Defining):</b> Fornecem informações essenciais para identificar o substantivo.</li>
+		<li><b>Explicativas (Non-defining):</b> Fornecem informações adicionais, mas não são essenciais para identificar o substantivo.</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>The student <b>who got the highest grade</b> won the scholarship. (Restritiva)</li>
+		<li>My friend, <b>who is a teacher</b>, lives in London. (Explicativa)</li>
+	  </ul>
+	  <p>As Orações Relativas Restritivas não são separadas por vírgulas, enquanto as Explicativas são.</p>
+
+	  <h4>30.1.2 RELATIVE PRONOUNS IN OBJECT POSITION</h4>
+	  <p>Quando o pronome relativo é o objeto da oração relativa, ele pode ser omitido em alguns casos:</p>
+	  <ul>
+		<li>The book <b>that</b> I read was very interesting. (O livro que eu li era muito interessante.)</li>
+		<li>The book <b>Ø</b> I read was very interesting. (O livro que eu li era muito interessante.)</li>
+	  </ul>
+	  <p>Observe que o pronome relativo "that" pode ser omitido quando é o objeto da oração relativa.</p>
+
+	  <h3>30.2. GERUND PHRASES</h3>
+	  <h4>30.2.1 COMPREENDER AS FRASES COM GERÚNDIO</h4>
+	  <h5>GERUND PHRASES / FRASES COM GERÚNDIO</h5>
+	  <p>As Frases com Gerúndio são construções que usam o gerúndio (-ing) como núcleo, podendo ser usadas como substantivos, adjetivos ou advérbios.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>Swimming</b> is a great exercise. (Substantivo)</li>
+		<li>The <b>singing</b> bird is beautiful. (Adjetivo)</li>
+		<li>She left the house <b>crying</b>. (Advérbio)</li>
+	  </ul>
+	  <p>As Frases com Gerúndio podem ser expandidas com outros elementos, como sujeitos, objetos, etc.:</p>
+	  <ul>
+		<li><b>Reading books</b> is my favorite hobby.</li>
+		<li>I enjoy <b>listening to music</b>.</li>
+		<li><b>Studying hard</b> is the key to success.</li>
+	  </ul>
+	  <p>Essas estruturas permitem expressar ações de maneira substantivada, adjetivada ou adverbial.</p>
+
+	  <h3>30.3. INFINITIVE PHRASES</h3>
+	  <h4>30.3.1 COMPREENDER AS FRASES COM INFINITIVO</h4>
+	  <h5>INFINITIVE PHRASES / FRASES COM INFINITIVO</h5>
+	  <p>As Frases com Infinitivo são construções que usam o infinitivo (to + verbo) como núcleo, podendo ser usadas como substantivos, adjetivos ou advérbios.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>To travel</b> is my dream. (Substantivo)</li>
+		<li>She is the first person <b>to volunteer</b>. (Adjetivo)</li>
+		<li>He came <b>to help</b> us. (Advérbio)</li>
+	  </ul>
+	  <p>As Frases com Infinitivo também podem ser expandidas com outros elementos:</p>
+	  <ul>
+		<li><b>To learn a new language</b> is challenging.</li>
+		<li>I hope <b>to visit Paris someday</b>.</li>
+		<li>She was eager <b>to start the new job</b>.</li>
+	  </ul>
+	  <p>Essas estruturas permitem expressar ações de maneira substantivada, adjetivada ou adverbial, assim como as Frases com Gerúndio.</p>
+
+	  <h3>30.4. PARTICIPLE PHRASES</h3>
+	  <h4>30.4.1 COMPREENDER AS FRASES COM PARTICÍPIOS</h4>
+	  <h5>PARTICIPLE PHRASES / FRASES COM PARTICÍPIOS</h5>
+	  <p>As Frases com Particípios são construções que usam o particípio presente (-ing) ou o particípio passado (Past Participle) como núcleo, modificando um substantivo.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li><b>Sitting on the bench</b>, the old man watched the children play. (Particípio Presente)</li>
+		<li>The <b>broken window</b> needs to be replaced. (Particípio Passado)</li>
+	  </ul>
+	  <p>Essas frases podem ser usadas para criar orações reduzidas, omitindo o pronome relativo e o verbo "to be":</p>
+	  <ul>
+		<li><b>Walking down the street</b>, I saw a new restaurant. (Reduzida de "As I was walking down the street, I saw a new restaurant.")</li>
+		<li>The book <b>written by that author</b> is very popular. (Reduzida de "The book that was written by that author is very popular.")</li>
+	  </ul>
+	  <p>O uso de Frases com Particípios torna a linguagem mais concisa e elegante.</p>
+
+
+	  <h2>UNIDADE 31</h2>
+	  <h3>31.1. PASSIVE VOICE (CONTINUED)</h3>
+	  <h4>31.1.1 COMPREENDER MAIS SOBRE A VOZ PASSIVA</h4>
+	  <p>Continuando o estudo da Voz Passiva:</p>
+	  <h5>PASSIVE VOICE IN COMPLEX SENTENCES</h5>
+	  <p>A Voz Passiva pode ser usada em frases complexas, com orações subordinadas:</p>
+	  <ul>
+		<li>It was reported that the new product <b>was launched</b> last week. (Oração subordinada na voz passiva)</li>
+		<li>The fact that the project <b>was completed</b> on time was celebrated. (Oração subordinada na voz passiva)</li>
+		<li>The students were told that the exam <b>would be held</b> next month. (Oração subordinada na voz passiva)</li>
+	  </ul>
+	  <p>Observe que a oração subordinada está na voz passiva, enquanto a oração principal pode estar na voz ativa ou passiva.</p>
+
+	  <h4>31.1.2 PASSIVE VOICE WITH REPORTING VERBS</h4>
+	  <p>A Voz Passiva também pode ser usada com verbos de relato, como "say", "report", "announce", etc.:</p>
+	  <ul>
+		<li>It was said that the company <b>was expanding</b> into new markets. (Voz passiva com verbo de relato)</li>
+		<li>The new policy <b>was announced</b> to be implemented next month. (Voz passiva com verbo de relato)</li>
+		<li>The research findings <b>were reported</b> to be inconclusive. (Voz passiva com verbo de relato)</li>
+	  </ul>
+	  <p>Nestes casos, a ênfase recai sobre a informação relatada, e não sobre quem a reportou.</p>
+
+	  <h3>31.2. MODALS (CONTINUED)</h3>
+	  <h4>31.2.1 COMPREENDER MAIS SOBRE OS VERBOS MODAIS</h4>
+	  <p>Continuando o estudo dos Verbos Modais:</p>
+	  <h5>MODALS IN THE PASSIVE VOICE</h5>
+	  <p>Os Verbos Modais também podem ser usados na Voz Passiva:</p>
+	  <ul>
+		<li>The exam <b>must be taken</b> by all students. (Obrigação)</li>
+		<li>The new security measures <b>should be implemented</b> as soon as possible. (Recomendação)</li>
+		<li>The package <b>can be delivered</b> tomorrow. (Possibilidade)</li>
+	  </ul>
+	  <p>Observe que a estrutura é: Subject + Modal + Be + Past Participle.</p>
+
+	  <h4>31.2.2 MIXED MODAL STRUCTURES</h4>
+	  <p>Além disso, os Verbos Modais também podem ser combinados com outras formas verbais, criando estruturas mistas:</p>
+	  <ul>
+		<li>The work <b>should have been completed</b> by now. (Modal perfeito)</li>
+		<li>The exam <b>must be being taken</b> at this moment. (Modal + Presente Contínuo Passivo)</li>
+		<li>The project <b>could have been started</b> earlier. (Modal perfeito)</li>
+	  </ul>
+	  <p>Essas estruturas mistas permitem expressar uma variedade de significados modais em diferentes tempos e aspectos.</p>
+
+	  <h3>31.3. PHRASAL VERBS (CONTINUED)</h3>
+	  <h4>31.3.1 COMPREENDER MAIS SOBRE OS VERBOS FRASAIS</h4>
+	  <p>Continuando o estudo dos Verbos Frasais:</p>
+	  <h5>PHRASAL VERBS IN THE PASSIVE VOICE</h5>
+	  <p>Os Verbos Frasais também podem ser usados na Voz Passiva:</p>
+	  <ul>
+		<li>The package <b>was picked up</b> by the courier. (O pacote foi recolhido pelo entregador.)</li>
+		<li>The meeting <b>was called off</b> due to the weather. (A reunião foi cancelada devido ao clima.)</li>
+		<li>The new policy <b>was looked into</b> by the committee. (A nova política foi analisada pelo comitê.)</li>
+	  </ul>
+	  <p>Nestes casos, o Verbo Frasal é tratado como uma unidade e é conjugado na voz passiva.</p>
+
+	  <h4>31.3.2 SEPARATING PHRASAL VERBS IN THE PASSIVE</h4>
+	  <p>Quando o objeto do Verbo Frasal é um pronome, o verbo e a partícula podem ser separados na Voz Passiva:</p>
+	  <ul>
+		<li>The package <b>was picked</b> it <b>up</b> by the courier. (O pacote foi recolhido pelo entregador.)</li>
+		<li>The meeting <b>was called</b> it <b>off</b> due to the weather. (A reunião foi cancelada devido ao clima.)</li>
+	  </ul>
+	  <p>Essa separação é opcional e depende do estilo e preferência do escritor.</p>
+
+
+	  <h2>UNIDADE 32</h2>
+	  <h3>32.1. REPORTED SPEECH (CONTINUED)</h3>
+	  <h4>32.1.1 COMPREENDER MAIS SOBRE O DISCURSO INDIRETO</h4>
+	  <p>Continuando o estudo do Discurso Indireto (Reported Speech):</p>
+	  <h5>REPORTING MODAL VERBS</h5>
+	  <p>Quando relatamos frases com Verbos Modais, também é necessário fazer ajustes no Discurso Indireto:</p>
+	  <ul>
+        <li>Direct: "You <b>must</b> finish your homework." (Você deve terminar sua lição de casa.)</li>
+        <li>Reported: She said (that) I <b>had to</b> finish my homework. (Ela disse que eu tinha que terminar minha lição de casa.)</li>
+	  </ul>
+	  <p>Observe que o Verbo Modal no Discurso Direto é transformado em um Verbo de Obrigação (have to, had to) no Discurso Indireto.</p>
+
+	  <h4>32.1.2 REPORTING QUESTIONS</h4>
+	  <p>Quando relatamos perguntas no Discurso Indireto, a estrutura é diferente:</p>
+	  <ul>
+        <li>Direct: "Where are you going?" (Para onde você está indo?)</li>
+        <li>Reported: He asked <b>where I was going</b>. (Ele perguntou para onde eu estava indo.)</li>
+	  </ul>
+	  <p>Neste caso, a pergunta direta é transformada em uma oração subordinada no Discurso Indireto.</p>
+
+	  <h3>32.2. ADVERBIAL CLAUSES</h3>
+	  <h4>32.2.1 COMPREENDER AS ORAÇÕES ADVERBIAIS</h4>
+	  <h5>ADVERBIAL CLAUSES / ORAÇÕES ADVERBIAIS</h5>
+	  <p>As Orações Adverbiais são orações subordinadas que modificam o verbo, o adjetivo ou toda a oração principal, expressando informações como tempo, causa, condição, concessão, etc.</p>
+	  <p>Alguns tipos de Orações Adverbiais:</p>
+	  <ul>
+        <li><b>Temporais:</b> When I arrived, the party had already started.</li>
+        <li><b>Causais:</b> Since it was raining, we decided to stay home.</li>
+        <li><b>Condicionais:</b> If it rains, I will take an umbrella.</li>
+        <li><b>Concessivas:</b> Although it was cold, we went for a walk.</li>
+        <li><b>Finais:</b> I studied hard so that I could pass the exam.</li>
+	  </ul>
+	  <p>As Orações Adverbiais são introduzidas por conjunções como "when", "because", "if", "although", "so that", etc.</p>
+
+	  <h3>32.3. NOUN CLAUSES</h3>
+	  <h4>32.3.1 COMPREENDER AS ORAÇÕES SUBSTANTIVAS</h4>
+	  <h5>NOUN CLAUSES / ORAÇÕES SUBSTANTIVAS</h5>
+	  <p>As Orações Substantivas são orações subordinadas que funcionam como substantivos, podendo ser sujeito, objeto, complemento nominal, etc.</p>
+	  <p>Elas são introduzidas por palavras como "that", "whether", "if", "why", "where", "how", etc.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li><b>That she passed the exam</b> was a surprise. (Sujeito)</li>
+        <li>I know <b>that she is coming to the party</b>. (Objeto)</li>
+        <li>The question is <b>whether we should go</b>. (Complemento nominal)</li>
+        <li>I wonder <b>why he left so early</b>. (Sujeito de verbo de pergunta)</li>
+	  </ul>
+	  <p>As Orações Substantivas podem ser usadas em diversos contextos gramaticais, desempenhando o papel de um substantivo na frase.</p>
+
+	  <h3>32.4. CONJUNCTIONS (CONTINUED)</h3>
+	  <h4>32.4.1 COMPREENDER MAIS SOBRE AS CONJUNÇÕES</h4>
+	  <p>Continuando o estudo das Conjunções:</p>
+	  <h5>CORRELATIVE CONJUNCTIONS</h5>
+	  <p>As Conjunções Correlativas são pares de conjunções que trabalham juntas, conectando elementos da frase.</p>
+	  <p>Alguns exemplos de Conjunções Correlativas:</p>
+	  <ul>
+        <li><b>Both... and...</b> (Tanto... quanto...)</li>
+        <li><b>Not only... but also...</b> (Não só... mas também...)</li>
+        <li><b>Either... or...</b> (Ou... ou...)</li>
+        <li><b>Neither... nor...</b> (Nem... nem...)</li>
+        <li><b>Whether... or...</b> (Quer... quer...)</li>
+	  </ul>
+	  <p>Exemplos:</p>
+	  <ul>
+        <li><b>Both</b> my parents <b>and</b> my grandparents are coming to the wedding.</li>
+        <li>She is <b>not only</b> a great singer <b>but also</b> an amazing dancer.</li>
+        <li>I can't decide <b>whether</b> to go to the beach <b>or</b> stay home.</li>
+	  </ul>
+
+<h1>UNIDADE EXTRA</h1>
+	  <h2>UNIDADE 33</h2>
+	  <h3>33.1. COHESION</h3>
+	  <h4>33.1.1 COMPREENDER A COESÃO</h4>
+	  <h5>COHESION / COESÃO</h5>
+	  <p>A Coesão é a maneira como as ideias em um texto são conectadas e organizadas, tornando-o mais claro e fácil de entender.</p>
+	  <p>Alguns elementos que contribuem para a Coesão de um texto:</p>
+	  <ul>
+		<li><b>Referência:</b> Uso de pronomes, demonstrativos e sinônimos para se referir a elementos anteriores.</li>
+		<li><b>Substituição:</b> Uso de palavras ou expressões para substituir elementos anteriores.</li>
+		<li><b>Elipse:</b> Omissão de palavras que podem ser inferidas do contexto.</li>
+		<li><b>Conjunções:</b> Uso de conjunções para conectar ideias e estabelecer relações lógicas.</li>
+		<li><b>Repetição:</b> Uso estratégico da repetição de palavras-chave para manter a coerência.</li>
+	  </ul>
+	  <p>Esses recursos ajudam a criar um texto coeso, com uma sequência lógica e clara.</p>
+
+	  <h3>33.2. COHERENCE</h3>
+	  <h4>33.2.1 COMPREENDER A COERÊNCIA</h4>
+	  <h5>COHERENCE / COERÊNCIA</h5>
+	  <p>A Coerência se refere à lógica e à consistência do texto, garantindo que as ideias estejam organizadas de forma clara e significativa.</p>
+	  <p>Alguns elementos que contribuem para a Coerência de um texto:</p>
+	  <ul>
+		<li><b>Tópico central:</b> Manter um foco temático claro ao longo do texto.</li>
+		<li><b>Progressão lógica:</b> Apresentar as ideias de forma organizada e com transições adequadas.</li>
+		<li><b>Relevância:</b> Garantir que todas as informações sejam relevantes e contribuam para o tema central.</li>
+		<li><b>Conhecimento compartilhado:</b> Considerar o conhecimento prévio do leitor e fornecer informações necessárias.</li>
+		<li><b>Estrutura textual:</b> Utilizar uma estrutura organizacional apropriada (introdução, desenvolvimento, conclusão).</li>
+	  </ul>
+	  <p>Esses elementos ajudam a criar um texto coerente, com ideias bem conectadas e de fácil compreensão.</p>
+
+	  <h3>33.3. HEDGING</h3>
+	  <h4>33.3.1 COMPREENDER O USO DE ATENUADORES</h4>
+	  <h5>HEDGING / ATENUADORES</h5>
+	  <p>O Hedging (uso de atenuadores) é uma estratégia linguística para expressar opiniões e afirmações de maneira menos direta ou assertiva.</p>
+	  <p>Alguns exemplos de atenuadores:</p>
+	  <ul>
+		<li><b>Modal Verbs:</b> may, might, could, should, would</li>
+		<li><b>Adverbs:</b> possibly, probably, perhaps, maybe</li>
+		<li><b>Expressions:</b> I think, I believe, it seems, it appears</li>
+		<li><b>Impersonal Pronouns:</b> one, people, it</li>
+	  </ul>
+	  <p>O uso de atenuadores ajuda a tornar a linguagem mais polida, evitando afirmações categóricas e demonstrando incerteza ou hesitação.</p>
+	  <p>Exemplos:</p>
+	  <ul>
+		<li>The new policy <b>may</b> be implemented next month.</li>
+		<li><b>I believe</b> the project will be completed on time.</li>
+		<li><b>It seems</b> that the weather will improve tomorrow.</li>
+	  </ul>
+
+	  <h4>33.4.1 COMPREENDER TOM E REGISTRO</h4>
+	  <h5>TONE AND REGISTER / TOM E REGISTRO</h5>
+	  <p>O Tom e o Registro se referem ao estilo e à formalidade da linguagem usada em um determinado contexto.</p>
+	  <p><b>Tom:</b> Reflete a atitude e a emoção do falante/escritor em relação ao assunto ou ao interlocutor.</p>
+	  <ul>
+		<li><b>Formal:</b> Impessoal, distante, respeitoso</li>
+		<li><b>Informal:</b> Pessoal, amigável, casual</li>
+		<li><b>Neutro:</b> Objetivo, sem emoção</li>
+	  </ul>
+	  <p><b>Registro:</b> Reflete o nível de formalidade da linguagem, adequado ao contexto e ao público-alvo.</p>
+	  <ul>
+		<li><b>Formal:</b> Utilizado em situações oficiais, acadêmicas, profissionais</li>
+		<li><b>Informal:</b> Utilizado em conversas cotidianas, entre amigos, família</li>
+		<li><b>Gírias e Linguagem Coloquial:</b> Utilizadas em contextos muito informais</li>
+	  </ul>
+	  <p>A escolha adequada do Tom e do Registro é importante para garantir a eficácia da comunicação.</p>
+
+	  <h3>33.5. ACADEMIC WRITING</h3>
+	  <h4>33.5.1 COMPREENDER A ESCRITA ACADÊMICA</h4>
+	  <h5>ACADEMIC WRITING / ESCRITA ACADÊMICA</h5>
+	  <p>A Escrita Acadêmica se refere à linguagem e às convenções utilizadas em textos acadêmicos, como artigos, dissertações e teses.</p>
+	  <p>Características da Escrita Acadêmica:</p>
+	  <ul>
+		<li><b>Formalidade:</b> Uso de linguagem formal, evitando gírias e expressões coloquiais.</li>
+		<li><b>Objetividade:</b> Apresentação de ideias de forma clara, concisa e impessoal.</li>
+		<li><b>Fundamentação:</b> Uso de citações, referências e evidências para sustentar argumentos.</li>
+		<li><b>Estrutura Organizada:</b> Divisão em seções (introdução, desenvolvimento, conclusão).</li>
+		<li><b>Terminologia Específica:</b> Utilização de vocabulário técnico e acadêmico relevante ao tema.</li>
+		<li><b>Coesão e Coerência:</b> Uso de recursos linguísticos para garantir a clareza e a lógica do texto.</li>
+	  </ul>
+	  <p>O domínio da Escrita Acadêmica é essencial para a produção de trabalhos científicos e de pesquisa de alta qualidade.</p>
+
+	  <h3>CONCLUSÃO</h3>
+	  <p>Neste manual, você aprendeu uma ampla variedade de tópicos gramaticais e estruturas da língua inglesa, desde os conceitos básicos até temas mais avançados. Você adquiriu conhecimento sobre verbos, tempos verbais, orações condicionais, discurso indireto, particípios, coesão e coerência, entre outros.</p>
+	  <p>Esse conteúdo lhe proporcionará uma compreensão sólida da gramática e da estrutura da língua inglesa, permitindo que você se comunique de forma mais clara, precisa e eficaz. Lembre-se de praticar constantemente para consolidar seu aprendizado e aprimorar suas habilidades em inglês.</p>
+	  <p>Parabéns por concluir este manual! Você deu um grande passo em direção ao domínio da gramática inglesa. Siga em frente, continue estudando e praticando, e você verá seus resultados melhorarem cada vez mais.</p>
+  </div>
+  </body>
+</html>

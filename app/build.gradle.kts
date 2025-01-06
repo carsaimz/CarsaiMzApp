@@ -11,8 +11,8 @@ android {
         applicationId = "com.carsaimz"
         minSdk = 21
         targetSdk = 33  // Atualizado para 33
-        versionCode = 10
-        versionName = "1.7"
+        versionCode = 11
+        versionName = "1.8"
 
         vectorDrawables {
             useSupportLibrary = true
@@ -49,7 +49,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.5.3")
     implementation("androidx.lifecycle:lifecycle-livedata:2.5.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel:2.5.1")
-
+   dependencies {
+    
     // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
 
@@ -61,3 +62,4 @@ dependencies {
 
 // Aplicar o plugin do Google Services (NECESSÁRIO para o Firebase)
 apply(plugin = "com.google.gms.google-services")
+}
