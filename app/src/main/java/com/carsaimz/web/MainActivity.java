@@ -328,6 +328,8 @@ public class MainActivity extends AppCompatActivity {
                 loadLocalHtml("support.html");
             } else if (itemId == R.id.nav_report) {
                 loadLocalHtml("report.html");
+            } else if (itemId == R.id.nav_bot) {
+                webView.loadUrl("https://bots.easy-peasy.ai/bot/64a9676d-62fc-4261-917a-dcdb1cff2280");
             } else if (itemId == R.id.nav_home) {
                 webView.loadUrl("https://carsaimz.blogspot.com");
             } else if (itemId == R.id.nav_our_book) {
