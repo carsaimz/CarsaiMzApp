@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# CarsaiMzApp
-=======
+
 ## CarsaiMz
 
 O CarsaiMz é um aplicativo móvel que serve como uma extensão do blog CarsaiMz, oferecendo acesso rápido e intuitivo aos conteúdos educacionais.
@@ -42,5 +40,3 @@ Para mais informações, entre em contato com a equipe do CarsaiMz:
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
-```
->>>>>>> bb105cc (Initial commit)
