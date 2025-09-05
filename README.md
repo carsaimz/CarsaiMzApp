@@ -34,7 +34,7 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou tiver suge
 
 Para mais informações, entre em contato com a equipe do CarsaiMz:
 
-- Website: [carsaimz.blogspot.com](https://carsaimz.blogspot.com)
+- Website: [carsaimz.site](https://carsaimz.site)
 - Email: carsaimozambique@gmail.com
 
 ## Licença
