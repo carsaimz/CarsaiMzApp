@@ -1,10 +1,4 @@
 plugins {
-    id("com.android.application") version "8.3.0" apply false
-    id("com.google.gms.google-services") version "4.4.2" apply false
-    alias(libs.plugins.android.application) // Se usar version catalogs
-}
-
-plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
 }
@@ -81,23 +75,19 @@ android {
 }
 
 dependencies {
-    // Core
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // WebView
     implementation("androidx.webkit:webkit:1.9.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
-    // Navigation & Lifecycle
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
 
-    // Firebase BOM - gerencia versões automaticamente
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-messaging-ktx")
