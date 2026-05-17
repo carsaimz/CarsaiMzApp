@@ -1,80 +1,105 @@
 plugins {
+    id("com.android.application") version "8.3.0" apply false
+    id("com.google.gms.google-services") version "4.4.2" apply false
+    alias(libs.plugins.android.application) // Se usar version catalogs
+}
+
+plugins {
     id("com.android.application")
-    id("com.google.gms.google-services") // Plugin do Firebase
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.carsaimz.web"
-    compileSdk = 33  // Atualizado para 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.carsaimz.web"
         minSdk = 21
-        targetSdk = 33  // Atualizado para 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
 
         vectorDrawables {
             useSupportLibrary = true
         }
-    }
-signingConfigs {
-        release {
-            if (System.getenv("KEYSTORE_FILE") != null) {
-                storeFile     file(System.getenv("KEYSTORE_FILE"))
-                storePassword System.getenv("KEYSTORE_PASSWORD")
-                keyAlias      System.getenv("KEY_ALIAS")
-                keyPassword   System.getenv("KEY_PASSWORD")
-            }
+        
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
         }
     }
+
+    signingConfigs {
+        create("release") {
+            storeFile = System.getenv("KEYSTORE_FILE")?.let { file(it) }
+            storePassword = System.getenv("KEYSTORE_PASSWORD")
+            keyAlias = System.getenv("KEY_ALIAS")
+            keyPassword = System.getenv("KEY_PASSWORD")
+            enableV3Signing = true
+            enableV4Signing = true
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
     buildTypes {
         debug {
-            applicationIdSuffix ".debug"
-            debuggable true
-            buildConfigField "boolean", "ENABLE_LOGS", "true"
+            applicationIdSuffix = ".debug"
+            isDebuggable = true
+            buildConfigField("boolean", "ENABLE_LOGS", "true")
+            isMinifyEnabled = false
         }
         release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "boolean", "ENABLE_LOGS", "false"
-            signingConfig signingConfigs.release
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            buildConfigField("boolean", "ENABLE_LOGS", "false")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
-
     buildFeatures {
         viewBinding = true
-        buildConfig = true  // Adicionado para gerar BuildConfig
+        buildConfig = true
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
 dependencies {
+    // Core
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.webkit:webkit:1.6.1")
+
+    // WebView
+    implementation("androidx.webkit:webkit:1.9.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
-    implementation("androidx.navigation:navigation-fragment:2.5.3")
-    implementation("androidx.lifecycle:lifecycle-livedata:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel:2.5.1")
-   dependencies {
-    
-    // Firebase BOM
+
+    // Navigation & Lifecycle
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.4")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.4")
+
+    // Firebase BOM - gerencia versões automaticamente
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
-
-    // Dependências do Firebase (não é necessário especificar versão com o BOM)
-    implementation("com.google.firebase:firebase-analytics")
-    implementation("com.google.firebase:firebase-messaging")
-    implementation("com.google.firebase:firebase-config")
-}
-
-// Aplicar o plugin do Google Services (NECESSÁRIO para o Firebase)
-apply(plugin = "com.google.gms.google-services")
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-messaging-ktx")
+    implementation("com.google.firebase:firebase-config-ktx")
 }
