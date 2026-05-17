@@ -29,7 +29,7 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    private static final String BASE_URL = "https://carsaimz.blogspot.com";
+    private static final String BASE_URL = "http://carsaimz.linkpc.net";
     private static final int PERMISSION_REQUEST_CODE = 1234;
     
     private WebView webView;
