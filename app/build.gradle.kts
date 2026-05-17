@@ -4,21 +4,30 @@ plugins {
 }
 
 android {
-    namespace = "com.carsaimz"
+    namespace = "com.carsaimz.web"
     compileSdk = 33  // Atualizado para 33
 
     defaultConfig {
-        applicationId = "com.carsaimz"
+        applicationId = "com.carsaimz.web"
         minSdk = 21
         targetSdk = 33  // Atualizado para 33
-        versionCode = 11
-        versionName = "1.8"
+        versionCode = 1
+        versionName = "1.0.0"
 
         vectorDrawables {
             useSupportLibrary = true
         }
     }
-
+signingConfigs {
+        release {
+            if (System.getenv("KEYSTORE_FILE") != null) {
+                storeFile     file(System.getenv("KEYSTORE_FILE"))
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+                keyAlias      System.getenv("KEY_ALIAS")
+                keyPassword   System.getenv("KEY_PASSWORD")
+            }
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
