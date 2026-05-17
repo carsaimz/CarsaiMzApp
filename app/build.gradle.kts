@@ -34,14 +34,20 @@ signingConfigs {
     }
 
     buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+            buildConfigField "boolean", "ENABLE_LOGS", "true"
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "ENABLE_LOGS", "false"
+            signingConfig signingConfigs.release
         }
     }
+
 
     buildFeatures {
         viewBinding = true
