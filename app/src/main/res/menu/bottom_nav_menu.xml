@@ -12,8 +12,4 @@
         android:id="@+id/nav_forward"
         android:icon="@drawable/ic_arrow_forward"
         android:title="Avançar" />
-    <item
-        android:id="@+id/nav_menu"
-        android:icon="@drawable/ic_menu"
-        android:title="Menu" />
-</menu>
+    </menu>
